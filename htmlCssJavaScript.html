@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the difference between HTML, CSS, and JavaScript. Understand their purpose, types, and how they work together to build modern websites.">
+    <title>HTML Vs CSS Vs JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+    
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+
+        <div class="content">
+
+            <h1>HTML Vs CSS Vs JavaScript</h1>
+            <p>Websites you see on the internet are built using three main technologies: HTML, CSS, and JavaScript. These technologies work together to create modern websites.</p>
+
+            <p>To understand them easily, think of a website like a human body:</p>
+
+            <ul>
+                <li>HTML - Structure of the body</li>
+                <li>CSS - Design (Style and appearance)</li>
+                <li>JavaScript - Functionality (Brain and actions)</li>
+            </ul>
+            
+            <p>Without any one of these technologies, a website would be incomplete. HTML, CSS, and JavaScript work together to create modern websites, and each of them plays an important role in web development.</p>
+
+            <h2>What is HTML?</h2>
+            <p>HTML (HyperText Markup Language) is the standard language used to build the structure of webpages, such as headings, paragraphs, images, and links.</p>
+
+            <p>It tells the browser:</p>
+
+            <ul>
+                <li>Where to display the content</li>
+                <li>Where headings should appear</li>
+                <li>Where paragraphs should appear</li>
+                <li>Where images and links should be placed</li>
+                <li>Where lists should be placed</li>
+            </ul>
+
+            <p>HTML does not design the website; it only builds the basic structure or skeleton of a webpage. Without HTML, a website cannot exist on the internet.</p>
+
+            <p>Basic structure of the website: </p>
+            
+            <div class="exampleContent">
+                <h2>Example</h2>
+                
+                <div class="codeBox">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                </div>
+            </div>
+            <button class="tryBtn">Try it Yourself</button>
+
+            <h2>What is CSS?</h2>
+            <p>CSS (Cascading Style Sheets) is used to design and style webpages and websites. It allows developers to control the layout, colors, fonts, spacing, and visual appearance of a webpage.</p>
+
+          <p>It controls how the website looks:</p>
+
+            <ul>
+                <li>Colors</li>
+                <li>Fonts</li>
+                <li>Backgrounds</li>
+                <li>Animations</li>
+                <li>Layout</li>
+                <li>Responsive design</li>
+                <li>Spacing</li>
+            </ul>
+
+            <p>Without CSS, websites would look plain and unattractive.</p>
+                
+            <div class="exampleContent">
+            <h2>Example</h2>
+                
+            <div class="codeBox">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;style&gt;
+
+h1{
+    color: black;
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+    font-family: Segoe UI;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+            </div>
+            <button class="tryBtn">Try it Yourself</button>    
+
+            <h2>Why CSS is important?</h2>
+            <p>CSS allows designers to create beautiful designs and responsive layouts. It helps improve the appearance of websites and makes them more attractive and user-friendly.</p>
+
+            <p>Types of CSS:</p>
+
+            <ul>
+                <li><b>Inline CSS -</b> This CSS is used directly inside HTML tags.</li>
+                <li><b>Internal CSS -</b> This CSS is written inside the &lt;style&gt; tag in the HTML document.</li>
+                <li><b>External CSS -</b> This CSS is written in a separate .css file. This is the best method for writing CSS.</li>
+            </ul>
+
+            </div>
+            
+            <h2>What is JavaScript? </h2>
+            <p>JavaScript is a programming language used to add functionality and interactivity to websites.</p>
+            <p>It makes websites dynamic, allowing users to interact with elements such as buttons, forms, animations, and more.</p>
+
+            <p>JavaScript can be used to:</p>
+
+            <ul>
+                <li>Validate forms</li>
+                <li>Create modal popups</li>
+                <li>Update webpage content without reloading the page</li>
+                <li>Create animations and interactive elements</li>
+                <li>Build web games and applications</li>
+            </ul>
+
+            <p>Without JavaScript, websites would be static and unable to respond to user interactions such as clicks, form submissions, and animations.</p>
+
+            <div class="exampleContent">
+            <h2>Example</h2>
+                
+            <div class="codeBox">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;style&gt;
+
+h1{
+    color: black;
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+    font-family: Segoe UI;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1 id="heading"&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+
+&lt;script&gt;
+
+const head = document.getElementById('heading');
+head.innerHTML = "Heading Changed by JavaScript!";
+
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+            </div>
+            </div>
+
+            <button class="tryBtn">Try it Yourself</button>
+        
+            <h2>HTML Vs CSS Vs JavaScript - Comparison Table</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th class="rowHead">Feature</th>
+                        <th>HTML</th>
+                        <th>CSS</th>
+                        <th>JavaScript</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th class="rowHead">Purpose</th>
+                        <td>HTML (HyperText Markup Language) creates the basic structure of a webpage. It defines what content will appear on the page, such as headings, paragraphs, links, images, and videos. Without HTML, websites cannot exist on the internet.</td>
+                        
+                        <td>CSS (Cascading Style Sheets) is used to design and style webpages, making them visually attractive. It controls elements such as fonts, colors, layout, spacing, responsiveness, and animations to enhance the overall appearance of a webpage.</td>
+                        
+                        <td>JavaScript adds functionality and interactivity to webpages. It allows webpages to respond to user actions such as scrolling, clicking buttons, typing in forms, and submitting data.</td>
+                    </tr>
+                    
+                    <tr>
+                        <th class="rowHead">Type</th>
+                        <td><ul>
+                            <li><b>HTML - </b>The first version of HTML used to create simple webpages with basic tags.</li>
+                        
+                            <li><b>HTML 2.0 - </b>The second version of HTML introduced forms and more structured elements.</li>
+                        
+                            <li><b>HTML 3.2 - </b>The third version of HTML added support for tables, scripting, and improved layout features.</li>
+                        
+                            <li><b>HTML 4.0 - </b>This version introduced better styling support and separation of content using CSS.</li>
+                        
+                            <li><b>HTML5 - </b> The latest version of HTML that supports multimedia, semantic elements, and modern web applications.</li>
+                        </ul></td>
+
+                        <td><ul>
+                            <li><b>Inline CSS - </b>Inline CSS is applied directly inside HTML tags using the &lt;style&gt; attribute.</li>
+                        
+                            <li><b>Internal CSS - </b>Internal CSS is written inside the &lt;style&gt; tag in the &lt;head&gt; section of the HTML document</li>
+                        
+                            <li><b>External CSS - </b>External CSS is written in a separate .css file and linked to the HTML document. This is the most recommended method.</li>
+                        </ul></td>
+
+                        <td><ul>
+                            <li><b>Inline JavaScript - </b>JavaScript written directly inside HTML elements using attributes like onclick.</li>
+                        
+                            <li><b>Internal JavaScript - </b>JavaScript written inside the &lt;script&gt; tag within the HTML document.</li>
+                        
+                            <li><b>External JavaScript - </b>JavaScript written in a separate .js file and linked to the HTML document.</li>
+                        </ul></td>
+                    </tr>
+                
+                    <tr>
+                        <th class="rowHead">Controls</th>
+                        <td>HTML defines the structure and content of a webpage, such as headings, paragraphs, links, images, and other elements that appear on the page.</td>
+
+                        <td>CSS controls the appearance of a webpage. It determines how the content looks on the screen, including fonts, colors, layout, alignment, and spacing.</td>
+
+                        <td>JavaScript controls the behavior of a webpage. It determines how the content responds to user actions such as clicks, animations, and form submissions.</td>
+                    </tr>
+
+                    <tr>
+                        <th class="rowHead">Runs in Browser</th>
+                        <td>Yes. The browser reads HTML first to build the structure of the webpage.</td>
+
+                        <td>Yes. The browser applies CSS after HTML to style and design the webpage.</td>
+
+                        <td>Yes. The browser executes JavaScript to make the webpage interactive and respond to user actions.</td>
+                    </tr>
+
+                    <tr>
+                        <th class="rowHead">Required</th>
+
+                        <td>Essential. HTML provides the basic structure of a website. Without it, a webpage cannot exist.</td>
+
+                        <td>Essential. CSS is required to style modern websites. Without CSS, webpages would appear plain and unstyled.</td>
+
+                        <td>Highly recommended. Websites can work without JavaScript, but they will not be interactive or dynamic.</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            
+            <div id="lessonBtns"></div>
+        </div>
+    </div>
+    
+    <div id="footer"></div>
+    <script src="navBar.js"></script>
+    <script src="btn.js"></script>
+    <script src="tutorial.js"></script>
+</body>
+</html>

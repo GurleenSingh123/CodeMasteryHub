@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how the internet works step by step including URL, DNS, servers, HTTP, and how browsers load websites.">
+    <title>How Internet Works</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+
+        <div class="layout">
+            <div id="sideBar" class="sidebar"></div>
+
+            <div class="content">
+
+                <h1>How the Internet Works</h1>
+                <p>The Internet is a huge global network that connects millions of computers, mobile phones, servers, and smart devices across the world.</p>
+
+                <h2>How the Internet Works (Step-by-Step)</h2>
+                <p>When you type a website address, for example www.google.com, the process that happens behind the scenes is very complex and difficult to understand, but it occurs within milliseconds.</p>
+
+                
+                <h3>Step 1 - You Enter the Website Address (URL)</h3>
+                <p>When you type the URL (Uniform Resource Locator) into your browser, for example https://www.google.com, the browser begins the process of finding and loading the website.</p>
+
+                <p>A URL (Uniform Resource Locator) consists of several parts:</p>
+                <ul>
+                    <li><b>https - </b> The protocol that defines how data is transferred between the browser and the server.</li>
+                    <li><b>www - </b> The subdomain that helps organize different sections of a website.</li>
+                    <li><b>example.com - </b> The domain name that identifies the website on the internet.</li>
+                </ul>
+
+                <h3>Step 2 - Finding the Website Number (DNS)</h3>
+
+                <p>Every website on the internet has a unique number called an IP address.</p>
+
+                <p>For example: www.example.com → 142.158.225.197</p>
+
+                <p>This process is handled by the DNS (Domain Name System). DNS helps convert the website name into its IP address so that computers can locate the correct server. Without DNS, users would have to remember the IP address of every website they want to visit.</p>
+                
+                <h3>Step 3 - Browser Sends Request to the Server</h3>
+
+                <p>Once the website number (IP address) is found with the help of DNS, the browser now knows where the website is located (its server).</p>
+
+                <p>A server is a powerful computer that stores websites and delivers them to users when requested.</p>
+
+                <p>The browser then sends a request message to the server. This request is sent using HTTP or HTTPS.</p>
+
+                <p><b>HTTP and HTTPS:</b></p>
+                <ul>
+                    <li><b>HTTP - </b> A normal connection used to transfer data.</li>
+                    <li><b>HTTPS - </b> A secure connection that encrypts the data.</li>
+                </ul>
+
+                <p>HTTPS helps protect data from hackers and keeps the communication between the browser and server secure.</p>
+
+                <h3>Step 4 - Server Sends Website Data</h3>
+
+                <p>The server responds by sending multiple files back to the browser.</p>
+
+                <p>The server may perform several tasks before sending the response:</p>
+
+                <ul>
+                    <li>Check the database</li>
+                    <li>Run backend code</li>
+                    <li>Verify permissions</li>
+                    <li>Generate dynamic content</li>
+                </ul>
+
+                <p>A website does not consist of just one file; it is a collection of many files such as HTML, CSS, JavaScript, images, and other resources.</p>
+
+                <p>The files included in a website are:</p>
+
+                <ul>
+                    <li>
+                        <p><b>HTML (Structure) - </b>It acts like the skeleton of the page (headings, paragraphs, layout).</p>
+                    </li>
+                
+                    <li>
+                        <p><b>CSS (Styling) - </b>It is used to design and style the web page.</p>
+                    </li>
+                
+                    <li>
+                        <p><b>JavaScript (Functionality) - </b>It is used to add functionality and interactivity to the page.</p>
+                    </li>
+                </ul>
+
+                <h3>Step 5 - Browser Builds the Webpage</h3>
+
+                <p>Now the browser starts building the page visually and arranges everything.</p>
+
+                <p>It is similar to assembling a puzzle:</p>
+
+                <ul>
+                    <li>Places the text on the page</li>
+                    <li>Applies colors and styles</li>
+                    <li>Runs JavaScript code</li>
+                    <li>Loads images and videos</li>
+                    <li>Displays advertisements if present</li>
+                </ul>
+
+                <p>Finally, the website appears on your screen.</p>
+
+                <h3>WWW (World Wide Web)</h3>
+
+                <p>The World Wide Web (WWW) is a collection of websites that are connected through the internet.</p>
+
+                <p>When you open any website on the internet, you are using the World Wide Web.</p>
+
+                <h3>HTTP (HyperText Transfer Protocol)</h3>
+
+                <p>HTTP allows the browser and the web server to communicate with each other.</p>
+
+                <p>When you type a website address, your browser sends a request to the server using HTTP. The server then sends the website data back to your browser, and you can see it on your screen.</p>
+                
+                <div id="lessonBtns"></div>
+
+            </div>
+        </div>
+
+    <div id="footer"></div>
+    <script src="btn.js" defer></script>
+    <script src="navBar.js" defer></script>
+    <script src="tutorial.js" defer></script>
+</body>
+</html>
+

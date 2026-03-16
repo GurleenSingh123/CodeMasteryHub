@@ -1,0 +1,1598 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font--segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font--lucida: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --btn--backgroundColor: #1da1f2;
+    --background--color: #020617;
+}
+
+body{
+    background:#0f172a;
+    color:#e5e7eb;
+    padding-top: 100px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+} 
+
+.navList{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background:#020617;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.websiteName{
+    color: #22c1f1;
+    font-size: 15px;
+    font-family: var(--font--segoe);
+}
+
+.navBar ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 0;
+}
+
+.navBar li{
+    list-style: none;
+}
+
+.navBar a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#cbd5e1;
+}
+
+.navBar a:hover{
+    color: #fff;
+}
+
+.menuBtn{
+    display: none;
+}
+
+.tutorialNavbar{
+    display: none;
+}
+
+.homePage{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.homeSec{
+    text-align: center;
+    padding: 40px 80px;
+    background: #111c3a;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.574);
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.head{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: var(--font--lucida);
+}
+
+.subHead{
+    color: #22c1f1;
+}
+
+.homeSec p{
+    font-size: 25px;
+    line-height: 1.4;
+    font-family: var(--font--segoe);
+    margin-bottom: 30px;
+}
+
+.homeSec a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--btn--backgroundColor);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: var(--font--segoe);
+    transition: all 0.3s ease;
+}
+
+.homeSec a:hover{
+    transform: scale(1.05);
+    background-color: rgb(50, 141, 232);
+}
+
+.homeAboutDetail{
+    text-align: center;
+    padding: 40px 80px;
+    background:#020617;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(83, 83, 83, 0.418);
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.homeAboutDetail p{
+    font-size: 25px;
+    font-family: var(--font--segoe);
+}
+
+.learnAboutBtn{
+    padding: 12px 30px;
+    text-decoration: none;
+    background: rgb(20, 38, 55);
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.learnAboutBtn:hover{
+    transform: scale(1.05);
+    background-color: rgb(30, 50, 62);
+}
+
+.tutorialHead{
+    text-align: center;
+    margin-top: 20px;
+    padding: 40px 60px;
+    font-family: var(--font--segoe);
+    font-size: 50px;
+}
+
+.tutorialSection{
+    text-align: center;
+    padding: 40px 80px;
+    background: #111c3a;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.574);
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.tutorialSection h1{
+    margin-bottom: 40px;
+}
+
+.tutorial{
+    background: var(--background--color);
+    border-radius: 20px;
+    padding: 30px;
+    border: none;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-left: 5px solid #1da1f2;
+    border-right: 5px solid #1da1f2;
+    transition: all 0.3s ease;
+}
+
+.tutorial:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(2, 121, 240, 0.51);
+}
+
+.tutorial h1{
+    font-family: var(--font--lucida);
+    margin-bottom: 28px;
+    font-size: 30px;
+}
+
+.tutorial p{
+    font-family: var(--font--segoe);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 20px;
+}
+
+.tutorial a{
+    display: inline-block;
+    background: #1da1f2;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 12px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.tutorial a:hover{
+    background: rgb(50, 141, 232);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.495);
+    transform: scale(1.05);
+}
+
+.whyChoose{
+    text-align: center;
+    padding: 40px 80px;
+    background:#020617;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(83, 83, 83, 0.418);
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.whyChoose ul{
+    font-family: var(--font--segoe);
+    font-size: 25px;
+}
+
+.whyChoose ul li{
+    line-height: 1.5;
+    list-style: none;
+}
+
+.whyChoose ul li span{
+    color: var(--btn--backgroundColor);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background: var(--background--color);
+    padding: 20px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.footerSection{
+    display: flex;
+    background: var(--background--color);
+    width: 100%;
+    justify-content: space-around;
+}
+
+.footerDetail h2{
+    color: #22c1f1;
+    font-family: var(--font--lucida);
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.footerDetail a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.667);
+    font-family: var(--font--segoe);
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.footerDetail a:hover{
+    color: white;
+}
+
+.copyRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.copyRight p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.667);
+    font-family: var(--font--segoe);
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.aboutFullSection{
+    padding: 80px 100px;
+}
+
+.aboutMainHead{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mainHead{
+    margin-top: 20px;
+    font-family: var(--font--lucida);
+    font-size: 50px;
+    margin-bottom: 18px;
+}
+
+.card{
+    padding: 30px 60px;
+    background: #111c3a;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.574);
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.card p{
+    font-family: var(--font--segoe);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* .card h1{
+    font-family: var(--font--lucida);
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #48c1fd;
+}
+
+.card h2{
+    font-family: var(--font--lucida);
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #48c1fd;
+} */
+
+.card ul{
+    font-size: 20px;;
+    line-height: 1.5;
+    font-family: var(--font--segoe);
+}
+
+.card ul li{
+    margin-bottom: 10px;
+}
+
+.secondAboutPara{
+    margin-top: 15px;
+}
+
+.contactSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 100px;
+}
+
+.contactSection h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contactDetailSection{
+    background: #111c3a;
+    padding: 30px 50px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.574) ;
+}
+
+.contactDetailSection h1{
+    color: #1da1f2;
+    font-family: var(--font--lucida);
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.contactDetailSection p{
+    font-family: var(--font--segoe);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contactEmail{
+    font-weight: bold;
+    margin-right: 2px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contactEmail span{
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.contactForm{
+    background: #111c3a;
+    padding: 30px 60px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 680px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.574);
+} 
+
+.contactFormDetail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputField{
+    padding: 18px;
+    border-radius: 18px;
+    width: 100%;
+    font-size: 18px;
+    font-family: var(--font--segoe);
+    background:#0b1324;
+    color: #e2e8f0;
+    border: none;
+}
+
+.inputField:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#textarea{
+    height: 100px;
+}
+
+.btnMsg{
+    width: 100%;
+    background: #1da1f2;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-family: var(--font--lucida);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.574);
+}
+
+.btnMsg:hover{
+    transform: translateY(-2px);
+    background: #0879bf;
+}
+
+.privacyPolicySection{
+    padding: 80px 100px;
+}
+
+.privacyPolicySection h1{
+    margin-bottom: 40px;
+}
+
+.googleDetail{
+    margin-top: 20px;
+}
+
+.card p a{ 
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card p a:hover{
+    color: #0ea5e9;
+    text-decoration: underline;
+}
+
+.termsAndConditionSection{
+    padding: 80px 100px;
+}
+
+.termsAndConditionSection h1{
+    margin-bottom: 40px;
+}
+
+.card h2{
+    font-family: var(--font--lucida);
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #48c1fd;
+}
+
+.card ul{
+    margin-top: 10px;
+}
+
+.card ul li{
+    font-family: var(--font--segoe);
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+.disclaimerSection{
+    padding: 80px 100px;
+}  
+
+.cardPara{
+    margin-top: 10px;
+}  
+
+.htmlTutorialSec{
+    display: flex;
+    align-items: stretch;
+}
+
+.sidebar{
+    margin-top: 5px;
+    width: 320px;
+    background: #0f2a44;
+    padding: 10px;
+    overflow-y: auto;
+}  
+
+.sidebar h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+} 
+
+.chapterName{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+}
+
+.chapterName:hover{
+    background-color: #054065;
+}
+
+hr{
+    height: 1px;
+    margin-top: 8px;
+    background-color: white;
+    border: none;
+    margin-bottom: 12px;
+}
+
+.chapterName h2{
+    font-family: var(--font--lucida);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.20px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.arrow{
+    color: #00d1ff;
+    transition: transform 0.3s;
+    cursor: pointer;
+    flex-shrink: 0;
+    text-align: center;
+    width: 20px;
+}
+
+.arrow:hover{
+    color:#1da1f2 ;
+}
+
+.arrow.open{
+    transform: rotate(180deg);
+}
+
+.topics{
+    font-family: var(--font--segoe);
+    display: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.topics.show{
+    display: block;
+}
+
+.topics ul{
+    padding: 12px 0;
+}
+
+.topics ul a{
+    color: white;
+    text-decoration: none;
+}
+
+.topics li{
+    padding: 8px 5px;
+    font-size: 18px;
+    list-style: none;
+    border-bottom: 2px solid #214772;
+}
+
+.topics li:hover{
+    background-color: #054065;
+}
+
+.content{
+    padding: 40px 60px;
+    max-width: 1200px;
+}
+
+.content h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #E6EDF3;
+    font-family: var(--font--lucida);
+}
+
+.content h2{
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 6px;
+    font-family: var(--font--lucida);
+    color: #22c1f1;
+}
+
+.content h3{
+    font-size: 28px;
+    font-family: var(--font--lucida);
+    margin-bottom: 5px;
+    margin-top: 28px;
+    color: #38BDF8;
+    font-weight: 600; 
+}
+
+.content h4{
+    font-size: 28px;
+    font-family: var(--font--lucida);
+    margin-bottom: 5px;
+    margin-top: 28px;
+    color: white;
+}
+
+.content p{
+    font-family: var(--font--segoe);
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.content ul{
+    font-family: var(--font--segoe);
+    padding: 0 20px;
+}
+
+.content ul li{
+    margin-bottom: 10px;
+    font-size: 22px;
+} 
+
+.layout{
+    display: flex;
+}
+ 
+.btnSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background: #0ea5e9;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background: #0c9cde;
+}
+
+.codeBox{
+    margin-top: 20px;
+    padding: 20px 40px;
+    background: #111c3a;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.574);
+    margin-bottom: 30px;
+}
+
+.codeBox pre{
+    font-family: var(--font--segoe);
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+
+}
+
+.codeBox code{
+    white-space: pre;  
+    display: block;
+}
+
+.tryBtn{
+    padding: 12px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    background: #0ea5e9;
+    cursor: pointer;
+}
+
+.tryBtn:hover{
+    background: #0c9cde;
+}
+
+table{
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid white;
+}
+
+table th{
+    font-size: 35px;
+    font-family: var(--font--lucida);
+}
+
+table td{
+    font-size: 20px;
+    font-family: var(--font--segoe);
+}
+
+table .rowHead{
+    font-size: 25px;
+}
+
+table tr:hover{
+    background-color: rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+table th:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+table th, table td{
+    padding: 20px;
+}
+
+.anchorTag{
+    font-size: 20px;
+    font-family: var(--font--segoe);
+    color: white;
+}
+
+.innerList{
+    list-style: disc;
+} 
+
+#successMsg{
+    font-size: 22px;
+    font-family: var(--font--segoe);
+    color: rgb(17, 217, 17);
+}
+
+@media (max-width:768px){
+
+    .menuBtn{
+        font-size:26px;
+        color:white;
+        cursor:pointer;
+        display:block;
+    }
+
+    .navList{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        background:#020617;
+
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding: 20px 40px;box-sizing:border-box;
+    }
+
+    .navBar{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+    }
+
+    .navBar ul{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#020617;
+
+        display:none;
+        flex-direction:column;
+        align-items:center;
+
+        gap:0;
+        padding:0;
+        margin:0;
+    }
+
+    .navBar ul li{
+        width:100%;
+        text-align:center;
+        padding:16px 0;
+        border-top:1px solid #1e293b;
+    }
+
+    .navBar ul li:hover{
+        background: #030821;
+    }
+
+    .navBar ul li a{
+        font-size:18px;
+        display:block;
+    }
+
+    .navBar ul.showMenu{
+        display:flex;
+    }
+
+    .websiteName{
+        font-size: 14px;
+    }
+    
+    .homePage{
+        margin-top: 40px;
+    }
+
+    .homePage p{
+        font-size: 20px;
+    }
+    
+    .homeSec{
+        padding: 35px 70px;
+        max-width: 600px;
+        margin-bottom: 70px;
+    }
+    
+    .head{
+        font-size: 40px;
+    }
+    
+    .homeSec p{
+        line-height: 1.3;
+        margin-bottom: 28px;
+    }
+    
+    .homeSec a{
+        padding: 10px 27px;
+        font-size: 18px;
+    }
+    
+    .homeAboutDetail{
+        padding: 35px 70px;
+        max-width: 600px;
+        margin-bottom: 70px;
+    }
+
+    .homeAboutDetail p{
+        line-height: 1.3;
+    }
+
+    .learnAboutBtn{
+        padding: 10px 27px;
+        font-size: 18px;
+        margin-top: 28px;
+    }
+
+    .tutorialSection{
+        padding: 35px 70px;
+        max-width: 600px;
+        margin-bottom: 70px;
+    }
+
+    .tutorialSection h1{
+        margin-bottom: 35px;
+    }
+
+    .tutorial{
+        padding: 27px;
+        width: 45%;
+        margin-bottom: 40px;
+        border-left: 4px solid #1da1f2;
+        border-right: 4px solid #1da1f2;
+    }
+
+    .tutorial h1{
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+
+    .tutorial p{
+        margin-bottom: 20px;
+    }
+
+    .tutorial a{
+        padding: 10px 18px;
+        font-size: 16px;
+        margin: 12px; 
+    }
+
+    .whyChoose{
+        padding: 35px 70px;
+        max-width: 600px;
+        margin-bottom: 70px;
+    }
+
+    .whyChoose ul{
+        font-size: 20px;
+    }
+
+    .whyChoose ul li{
+        line-height: 1.4;
+    }
+
+    .footer{
+        padding: 18px;
+    }
+
+    .footerSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footerDetail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerDetail h2{
+        font-size: 28px;
+    }
+
+    .footerDetail a{
+        font-size: 16px;
+    }
+
+    .copyRight{
+        margin-top: 27px;
+    }
+
+    .copyRight p{
+        font-size: 16px;
+    }
+
+    .aboutFullSection{
+        padding: 60px 80px;
+    }
+
+    .aboutMainHead{
+        max-width: 700px;
+    }
+
+    .card{
+        padding: 25px 50px;
+        max-width: 600px;
+        margin-bottom: 25px;
+    }
+
+    .card p{
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .card h2{
+        font-family: var(--font--lucida);
+        font-size: 27px;
+        margin-bottom: 18px;
+    }
+
+    .card ul li{
+        margin-bottom: 8px;
+        font-size: 18px;;
+        line-height: 1.1;
+    }
+
+    .contactSection{
+        padding: 60px 80px;
+    }
+
+    .contactSection h1{
+        font-size: 40px;
+        margin-bottom: 18px;
+    }
+
+    .contactEmail{
+        font-size: 18px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .contactEmail span{
+        font-size: 18px;
+    }
+
+    .contactForm{
+        padding: 20px 50px;
+        max-width: 500px;
+    }
+
+    .inputField{
+        padding: 15px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #textarea{
+        height: 100px;
+    }
+
+    .btnMsg{
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .privacyPolicySection{
+        padding: 60px 80px;
+    }
+
+    .privacyPolicySection h1{
+        margin-bottom: 35px;
+    }
+
+    .googleDetail{
+        margin-top: 18px;
+    }
+
+    .termsAndConditionSection{
+        padding: 60px 80px;
+    }
+
+    .termsAndConditionSection h1{
+        margin-bottom: 35px;
+    }
+
+    .disclaimerSection{
+        padding: 60px 80px;
+    } 
+
+    .sidebar{
+        position:fixed;
+        overflow-y: auto;
+        height: calc(100vh - 120px);
+        left:-280px;
+        width: 260px;
+        top: 120px;
+        transition: 0.3s;
+        z-index:9998;
+    }
+     
+
+    .sidebar.showSidebar{
+        left:0;
+    }
+
+    .sidebar h1{
+        margin-top: 18px;
+        font-size: 35px;
+        margin-bottom: 26px;
+    } 
+
+    .tutorialNavbar{
+        display: flex;
+        align-items: center;
+        background: #030821;
+        color: white;
+        padding: 15px 20px;
+        width: 100%;
+        gap: 20px;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        z-index: 9998;
+    }
+
+    .tutorialMenuBtn{
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .tutorialName{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .chapterName{
+        margin-top: 10px;
+    }
+
+    .chapterName h2{
+        font-size: 16px;
+    }
+
+    .topics{
+        margin-bottom: 16px;
+    }
+
+    .topics li{
+        font-size: 14px;
+    }
+
+    .content{
+        max-width: 750px;
+    }
+
+    .content h1{
+        margin-top: 15px;
+        font-size: 45px;
+    }
+
+    .content h2{
+        margin-top: 40px;
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+
+    .content h3{
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+    .content p{
+        font-family: var(--font--segoe);
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .content ul li{
+        margin-bottom: 10px;
+        font-size: 20px;
+    } 
+
+    .content h4{
+        font-size: 24px;
+        margin-top: 25px;
+    }
+
+    .btn{
+        padding: 8px 18px;
+        font-size: 18px;
+    }
+
+    .codeBox{
+        margin-top: 18px;
+        padding: 18px 44px;
+        max-width: 600px;
+        margin-bottom: 25px;
+    }
+
+    .codeBox pre{
+        font-size: 20px;
+
+    }
+
+    .tryBtn{
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    table{
+        margin-top: 18px;
+    }
+    
+    table th{
+        font-size: 30px;
+    }
+    
+    table td{
+        font-size: 18px;
+    }
+    
+    table .rowHead{
+        font-size: 22px;
+    }
+    
+    table th, table td{
+        padding: 18px;
+    }
+    
+    .anchorTag{
+        font-size: 18px;
+    }
+
+    #successMsg{
+        font-size: 20px;
+    }   
+
+} 
+
+@media(max-width: 480px){
+
+    .menuBtn{
+        font-size: 24px;
+    }
+
+    .navBar ul li{
+        padding: 14px 0;
+    }
+
+    .navBar ul li a{
+        font-size: 16px;
+    }
+
+    .websiteName{
+        font-size: 12px;
+    }
+    
+    .homePage{
+        margin-top: 35px;
+    }
+
+    .homePage p{
+        font-size: 18px;
+    }
+    
+    .homeSec{
+        padding: 30px 60px;
+        max-width: 500px;
+        margin-bottom: 60px;
+    }
+    
+    .head{
+        font-size: 35px;
+    }
+    
+    .homeSec p{
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+    
+    .homeSec a{
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+    
+    .homeAboutDetail{
+        padding: 30px 60px;
+        max-width: 500px;
+        margin-bottom: 60px;
+    }
+
+    .homeAboutDetail p{
+        line-height: 1.4;
+    }
+
+    .learnAboutBtn{
+        padding: 10px 25px;
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .tutorialSection{
+        padding: 30px 60px;
+        max-width: 500px;
+        margin-bottom: 60px;
+    }
+
+    .tutorialSection h1{
+        margin-bottom: 30px;
+    }
+
+    .tutorial{
+        padding: 25px;
+        width: 40%;
+        margin-bottom: 35px;
+        border-left: 3px solid #1da1f2;
+        border-right: 3px solid #1da1f2;
+    }
+
+    .tutorial h1{
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .tutorial p{
+        margin-bottom: 18px;
+    }
+
+    .tutorial a{
+        padding: 10px 16px;
+        font-size: 12px;
+        margin: 10px; 
+    }
+
+    .whyChoose{
+        padding: 30px 60px;
+        max-width: 500px;
+        margin-bottom: 60px;
+    }
+
+    .whyChoose ul{
+        font-size: 18px;
+    }
+
+    .whyChoose ul li{
+        line-height: 1.3;
+    }
+
+    .footer{
+        padding: 16px;
+        min-width: 650px;
+    }
+
+    .footerSection{
+        gap: 25px;
+    }
+
+    .footerDetail h2{
+        font-size: 24px;
+    }
+
+    .footerDetail a{
+        font-size: 14px;
+    }
+
+    .copyRight{
+        margin-top: 25px;
+    }
+
+    .copyRight p{
+        font-size: 14px;
+    }
+
+    .aboutFullSection{
+        padding: 10px 40px;
+    }
+
+    .aboutMainHead{
+        max-width: 500px;
+    }
+
+    .card{
+        padding: 25px 40px;
+        max-width: 500px;
+    }
+
+    .card p{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .card h2{
+        font-size: 25px;
+        margin-bottom: 16px;
+    }
+    
+    .card ul li{
+        line-height: 1.1;
+        font-size: 16px;;
+        margin-bottom: 7px;
+    }
+
+    .contactSection{
+        padding: 10px 40px;
+    }
+
+    .contactSection h1{
+        font-size: 35px;
+        margin-bottom: 18px;
+    }
+
+    .contactEmail{
+        font-size: 16px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+    .contactEmail span{
+        font-size: 16px;
+    }
+
+    .contactForm{
+        padding: 18px 40px;
+        max-width: 320px;
+    }
+
+    .inputField{
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .btnMsg{
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    
+    .privacyPolicySection{
+        padding: 10px 40px;
+    }
+
+    .privacyPolicySection h1{
+        margin-bottom: 18px;
+    }
+
+    .googleDetail{
+        margin-top: 16px;
+    }
+
+    .termsAndConditionSection{
+        padding: 10px 40px;
+    }
+
+    .termsAndConditionSection h1{
+        margin-bottom: 18px;
+    }
+
+    .disclaimerSection{
+        padding: 10px 40px;
+    } 
+
+    .sidebar{
+        position:fixed;
+        overflow-y: auto;
+        height: calc(100vh - 120px);
+        left:-280px;
+        width: 260px;
+        top: 115px;
+        transition: 0.3s ;
+        z-index:9998;
+    }
+    
+    .sidebar.showSidebar{
+        left:0;
+    }
+
+    .sidebar h1{
+        margin-top: 16px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    } 
+
+    .tutorialNavbar{
+        padding: 12px 16px;
+    }
+
+    .tutorialMenuBtn{
+        font-size: 18px;
+    }
+
+    .tutorialName{
+        font-size: 18px;
+    }
+
+    .chapterName{
+        margin-top: 8px;
+    }
+
+    .chapterName h2{
+        font-size: 15px;
+    }
+
+    .topics{
+        margin-bottom: 14px;
+    }
+
+    .topics li{
+        font-size: 13px;
+    }
+
+    .content{
+        max-width: 700px;
+    }
+
+    .content h1{
+        margin-top: 12px;
+        font-size: 40px;
+    }
+
+    .content h2{
+        margin-top: 35px;
+        font-size: 30px;
+    }
+
+    .content h3{
+        margin-top: 20px;
+    }
+
+    .content p{
+        font-size: 18px;
+    }
+
+    .content ul li{
+        margin-bottom: 5px;
+        font-size: 18px;
+    } 
+
+    .content h4{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .btn{
+        padding: 5px 12px;
+        font-size: 12px;
+    }
+    
+    .codeBox{
+        margin-top: 15px;
+        padding: 15px 36px;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .codeBox pre{
+        font-size: 18px;
+
+    }
+
+    .tryBtn{
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    table{
+        margin-top: 16px;
+    }
+    
+    table th{
+        font-size: 25px;
+    }
+    
+    table td{
+        font-size: 16px;
+    }
+    
+    table .rowHead{
+        font-size: 20px;
+    }
+    
+    table th, table td{
+        padding: 16px;
+    }
+    
+    .anchorTag{
+        font-size: 16px;
+    }
+
+    #successMsg{
+        font-size: 18px;
+    }
+
+}

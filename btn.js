@@ -1,0 +1,77 @@
+// // Load button template
+// fetch("nextPrevBtn.html")
+//   .then(res => res.text())
+//   .then(data => {
+//     document.getElementById("lessonBtns").innerHTML = data;
+
+//     setupNavigation(); // After buttons load
+//   });
+
+// function setupNavigation(){
+
+//   let file = window.location.pathname.split("/").pop();
+//   let num = parseInt(file.match(/\d+/));
+
+//   document.getElementById("prevBtn").onclick = function(){
+//     if(num > 1){
+//       window.location.href = "lesson" + (num - 1) + ".html";
+//     }
+//   };
+
+//   document.getElementById("nextBtn").onclick = function(){
+//     window.location.href = "lesson" + (num + 1) + ".html";
+//   };
+// }
+
+
+// Load button template
+fetch("nextPrevBtn.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("lessonBtns").innerHTML = data;
+    setupNavigation();
+  });
+
+function setupNavigation(){
+
+  // ⭐ Define lesson order manually
+  const lessons = [
+    "introduction.html",
+    "historyOfHtml.html",
+    "htmlCssJavaScript.html", 
+    "what-is-website.html",
+    "howInternetWorks.html", 
+    "installingVsCode.html", 
+    "htmlStructure.html", 
+    "htmlElements.html"
+  ];
+
+  let current = window.location.pathname.split("/").pop();
+  let index = lessons.indexOf(current);
+
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  if(index !== -1){
+
+    // Previous
+    if(index > 0){
+      prevBtn.onclick = function(){
+        window.location.href = lessons[index - 1];
+      };
+    } else {
+      prevBtn.style.visibility = "hidden";
+    }
+
+    // Next
+    if(index < lessons.length - 1){
+      nextBtn.onclick = function(){
+        window.location.href = lessons[index + 1];
+      };
+    } else {
+      nextBtn.style.visibility = "hidden";
+    }
+
+  }
+}
+

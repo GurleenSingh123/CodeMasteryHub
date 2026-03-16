@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML introduction, structure, and basic concepts with simple explanations and examples for beginners.">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+
+    <div class="layout">
+        
+        <div id="sideBar" class="sidebar"></div>
+        
+        <div class="content">
+            
+            <h1>Introduction</h1>
+            <p>HTML (HyperText Markup Language) is the basic building block of all web pages. It is used to create and structure content such as headings, paragraphs, images, and links.</p>
+
+            <h2>What is HTML?</h2>
+            <p>HTML (HyperText Markup Language) is not a programming language. It is a <b>markup language</b> that uses special tags to structure and display content in a web browser.</p>
+            
+            <h3>HyperText</h3>
+            <p>HyperText refers to text that contains hyperlinks, allowing users to navigate from one page to another or to different sections of the same page.</p>
+            
+            <p>For example, when you are on the home page of a website and click the "About Us" link, you are taken to the About Us page. This happens because the pages are connected through hyperlinks.</p>
+            
+            <h3>Markup Language</h3>
+            <p>A markup language is a language that uses tags to structure and format content on a web page.</p>
+            
+            <p>For example: </p>
+            <div class="codeBox">
+                <p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
+                <p>&lt;p&gt;This is a paragraph&lt;/p&gt;</p>
+            </div>
+            
+
+            <p>These tags tell the browser how to display content. The &lt;h1&gt; tag is used to create a heading, and the &lt;p&gt; tag is used to create a paragraph on a web page.</p>
+            
+            <h2>Structure of a Web Page</h2>
+            <p>HTML follows a basic structure to organize content on a web page. This structure helps browsers display the content correctly on the internet.</p>
+            <p>A basic HTML page contains the following structure:</p>
+            
+            <ul>
+                <ul>
+                    <li>Document type declaration</li>
+                    <li>HTML Root Element</li>
+                    <li>Head Tag (Metadata)</li>
+                    <li>Body Section (Main Content)</li>
+                </ul>
+            </ul>
+
+            <h3>Document type declaration — &lt;!DOCTYPE html&gt;</h3>
+            <p><b>Purpose -</b> It tells the browser that the web page is written using HTML5.</p>
+
+            <p>Without &lt;!DOCTYPE html&gt;, the browser may not display the web page correctly.</p>
+            
+            <h3>HTML Root Element - &lt;html&gt;</h3>
+            <p>It tells the browser that the entire content of the page is written in HTML.</p>
+
+            <p>All other HTML elements are placed inside the &lt;html&gt; element. It is called the root element because it is the parent of all other elements.</p>
+            
+            <h3>Head Section - &lt;head&gt;</h3>
+            <p>The head section contains information about the web page, but this information is not visible on the page.</p>
+            <p>Head section includes common elements:</p>
+            <ul>
+
+                <ul>
+                    <li>Page title</li>
+                    <li>Stylesheets (CSS)</li>
+                    <li>Scripts (JavaScript)</li>
+                    <li>Character encoding</li>
+                    <li>SEO information</li>
+                </ul>
+            </ul>
+            
+            <h3>Title Tag - &lt;title&gt;</h3>
+            <p>The title tag is used to display the name of the webpage in the browser tab and search engine results. It is very important for SEO and user experience.</p>
+            
+            <h3>Body Tag - &lt;body&gt;</h3>
+            <p>The body tag contains all the main content that is displayed on the web page.</p>
+
+            <p>The body tag includes:</p>
+            <ul>
+                <ul>
+                    <li>Headings</li>
+                    <li>Paragraphs</li>
+                    <li>Images</li>
+                    <li>Videos</li>
+                    <li>Lists</li>
+                    <li>Tables</li>
+                    <li>Links</li>
+                    <li>Forms</li>
+                </ul>
+            </ul>
+            
+            <h2>Key Features of HTML</h2>
+            <p>HTML (HyperText Markup Language) is the foundation of web development. It provides essential features used to create web pages and websites.</p>
+
+            <ul>
+
+                <li><b>Easy to Learn -</b> HTML is easy to learn and beginner-friendly.</li>
+                
+                <li><b>Works on All Devices -</b> HTML pages can be opened on many devices, including:</li>
+                
+                <ul>
+                    <li>Laptops / Computers</li>
+                    <li>Tablets</li>
+                    <li>Mobile</li>
+                    <li>Smart TVs</li>
+                </ul> 
+                
+                <li><b>Works on All Operating Systems - </b>It supports:</li>
+
+                <ul>
+                    <li>macOS</li>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                    <li>IOS</li>
+                    <li>Android</li>
+                </ul>
+            </ul>
+            
+            <h2>Why HTML is Important</h2>
+            <p>HTML transformed the internet into a global information system and made it useful and easy to understand.</p>
+            
+            <ul>
+
+                <li><b>It enabled:</b></li>
+                <ul>
+                    <li>Online Learning</li>
+                    <li>E-commerce</li>
+                    <li>Social Media</li>
+                    <li>Digital Communication</li>
+                    <li>Entertainment Platforms</li>
+                </ul>
+            </ul>
+            
+            <p>Without HTML, modern websites and web applications would not exist.</p>
+            
+            <div id="lessonBtns"></div>
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+    <script src="btn.js"></script>
+    <script src="navBar.js" defer></script>
+    <script src="tutorial.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the basic structure of an HTML document including doctype, html, head, title, and body tags with examples.">
+    <title>HTML Structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+        
+        <div class="content">
+            
+            <h1>Understanding the Basic Structure of an HTML Document</h1>
+
+            <p>Every website or webpage on the internet is created using HTML. HTML stands for HyperText Markup Language. It is used to structure and organize the content of a website.</p>
+
+           <p>Every website you see on the internet has an HTML structure behind it. This structure tells the browser how to display videos, images, text, and other content on the page.</p>
+
+            <p>HTML is like the skeleton of the human body. Just as the skeleton supports the body, HTML supports and structures a web page.</p>
+
+            <p>Before writing any content on a webpage, we must first create the basic HTML structure.</p>
+
+            <h2>Basic HTML Structure</h2>
+            <p>Below is the basic HTML structure used in most websites.</p>
+
+            <div class="exampleContent">
+                <h2>Example</h2>
+                
+                <div class="codeBox">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My First Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Basic HTML Structure&lt;/h1&gt;
+&lt;p&gt;This is my first website&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <p>Each part of this structure has a specific purpose. Let's understand each part step by step.</p>
+
+            <h2>Doctype Declaration</h2>
+            <div class="codeBox">
+                    <p>&lt;!DOCTYPE html&gt;</p>
+            </div>
+
+            <ul>
+                <li>The DOCTYPE declaration is always written at the top of an HTML document.</li>
+                <li>This line tells the browser that the page is written in HTML5, which is the latest version of HTML.</li>
+                <li>Without the DOCTYPE declaration, some browsers may not understand the HTML code properly.</li>
+                <li>The browser needs this information to display the page correctly.</li>
+                <li>&lt;!DOCTYPE html&gt; is very important because it ensures that the page is displayed correctly on the screen. It should always be written at the beginning of the document.</li>
+            </ul>
+
+            <h2>HTML Tag</h2>
+            <div class="codeBox">
+                <p>&lt;html&gt;</p>
+                <p>&lt;/html&gt;</p>
+            </div>
+
+            <ul>
+                <li>The &lt;html&gt; tag is the root element of an HTML document.</li>
+                <li>All the content of the page should be written between the opening &lt;html&gt; tag and the closing &lt;/html&gt; tag.</li>
+                <li>This tag tells the browser that everything inside it is written in HTML.</li>
+            </ul>
+
+            <h2>Head Tag</h2>
+            <div class="codeBox">
+                <p> &lt;head&gt;&lt;title&gt; My first webpage &lt;/title&gt;&lt;/head&gt;</p>
+            </div>
+
+            <ul>
+                <li>The &lt;head&gt; section contains information about the web page.</li>
+                <li>Inside the &lt;head&gt; section, we usually include:</li>
+                <ul>
+                    <li>The page title</li>
+                    <li>Meta information</li>
+                    <li>CSS files</li>
+                    <li>Links to external files</li>
+                </ul>
+                <li>This section is not directly visible on the screen, but it helps the browser understand the webpage.</li>
+            </ul>
+
+            <h2>Title Tag</h2>
+            <div class="codeBox">
+                <p>&lt;title&gt;My First Web Page&lt;/title&gt;</p>
+            </div>
+            <ul>
+                <li>The &lt;title&gt; tag defines the title of the webpage.</li>
+                <li>It tells both search engines and users what the page is about.</li>
+                <li>The title appears on the browser tab at the top of the page.</li>
+            </ul>
+
+            <h2>Body Tag</h2>
+            <div class="codeBox">
+                <p>&lt;body&gt; &lt;/body&gt;</p>
+            </div>
+
+           <ul>
+                <li>The &lt;body&gt; tag contains all the main content of a webpage.</li>
+                <li>Everything that the user sees on a webpage is written inside the &lt;body&gt; tag.</li>
+                <li>Examples of things written inside the &lt;body&gt; tag:</li>
+                <ul>
+                    <li>Headings</li>
+                    <li>Paragraphs</li>
+                    <li>Links</li>
+                    <li>Videos</li>
+                    <li>Images</li>
+                    <li>Lists</li>
+                    <li>Tables</li>
+                    <li>Buttons</li>
+                </ul>
+            </ul>
+
+            <h2>Heading Tag</h2>
+            <div class="codeBox">
+               <p>&lt;h1&gt; Welcome to My Website &lt;/h1&gt;</p> 
+            </div>
+
+            <ul>
+                <li>The main heading is written using the &lt;h1&gt; tag.</li>
+                <li>Headings help organize the page in a clear and easy-to-understand way.</li>
+                <li>HTML has <b>six heading levels:</b>
+                    <ul>
+                        <li>&lt;h1&gt;Main Heading&lt;/h1&gt;</li>
+                        <li>&lt;h2&gt;Second Heading&lt;/h2&gt;</li>
+                        <li>&lt;h3&gt;Third Heading&lt;/h3&gt;</li>
+                        <li>&lt;h4&gt;Fourth Heading&lt;/h4&gt;</li>
+                        <li>&lt;h5&gt;Fifth Heading&lt;/h5&gt;</li>
+                        <li>&lt;h6&gt;Smallest Heading&lt;/h6&gt;</li>
+                    </ul>
+                </li>
+                <li>The &lt;h1&gt; heading is the main heading, while &lt;h6&gt; is the smallest heading.</li>
+            </ul>
+            
+            <h2>Paragraph Tag</h2>
+            <div class="codeBox">
+                <p>&lt;p&gt; This is the paragraph tag&lt;/p&gt;</p>
+            </div>
+
+           <ul>
+                <li>The &lt;p&gt; tag is used to write paragraph text.</li>
+                <li>Paragraphs are used to explain information in a simple and readable format.</li>
+                <li>Example:
+                    <div class="codeBox">
+                        <p>&lt;p&gt;HTML is used to create the structure of a website.&lt;/p&gt;</p>
+                    </div>
+                </li>
+                <li>Using paragraph tags makes the content easier to read and understand.</li>
+            </ul>
+
+            <h2>How the Browser Reads HTML</h2>
+            <p>When the browser loads a webpage or website, it reads the HTML code from top to bottom.</p>
+            <p>Writing a proper HTML structure is important because the browser understands each tag and displays the content accordingly.</p>
+
+            <h2>Why the HTML Structure Is Important</h2>
+            <p>A proper HTML structure is important because:</p>
+            <ul>
+                <li><b>Browser Understanding - </b>Browsers can easily understand the webpage and display the content correctly when the HTML structure is properly written.</li>
+
+                <li><b>Clean and Organized Code - </b>Using a proper structure helps keep the code clean, organized, and easier to understand.</li>
+
+                <li><b>Easy Development - </b>When developers follow the standard HTML structure, it becomes easier to edit, update, and maintain the code.</li>
+
+                <li><b>SEO (Search Engine Optimization) - </b>Search engines like Google read the HTML structure to understand the content of a webpage. A well-structured page can rank better in search results.</li>
+            </ul>
+
+            <div id="lessonBtns"></div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="navBar.js"></script>
+    <script src="btn.js"></script>
+    <script src="tutorial.js"></script>
+</body>
+</html>

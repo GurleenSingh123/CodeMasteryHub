@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "I1lnPyEDcDc64bZdQ",
+        });
+    })();
+    </script>
+</head> 
+<body>
+    <div id="navBar"></div>
+    
+    <div class="contactSection">
+        <h1 class="head">Contact Us</h1>
+
+        <div class="card">
+            <h2>Get in Touch</h2>
+
+            <p>If you have any questions, suggestions, or feedback, feel free to reach out through the Contact page. We are always happy to help learners on their coding journey.</p>
+
+            <p class="contactEmail">Email:<span> gurleen321cl@gmail.com</span></p>
+
+            <p>For questions, feedback, or technical support, please use the contact form below.</p>
+        </div>
+
+        <form class="contactForm" id="form">
+            <div class="contactFormDetail">    
+                <input type="text" placeholder="Your Name" class="inputField" id="name" required>
+                
+                <input type="text" placeholder="Your Email" class="inputField" id="email">
+                
+                <textarea class="inputField" id="textarea" placeholder="Your Message"></textarea>
+                
+                <button type="submit" class="btnMsg" >Send Message</button>
+
+                <p id="successMsg"></p>
+            </div>
+        </form>
+    </div>
+
+    <div id="footer"></div>
+    <script src="contact.js"></script>
+    <script src="footer.js"></script>
+    <script src="navBar.js"></script>
+</body>
+</html>
