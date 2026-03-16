@@ -536,10 +536,13 @@ body{
 
 .sidebar{
     margin-top: 5px;
-    width: 380px;
+    width: 320px;
     background: #0f2a44;
     padding: 10px;
+    flex-shrink: 0;
+    padding-right: 20px;
     overflow-y: auto;
+    overflow-x: hidden;
 }  
 
 .sidebar h1{
@@ -688,6 +691,7 @@ hr{
 
 .layout{
     display: flex;
+    width: 100%;
 }
  
 .btnSection{
@@ -1096,13 +1100,12 @@ table th, table td{
         position:fixed;
         overflow-y: auto;
         height: calc(100vh - 120px);
-        left:-280px;
+        left:-300px;
         width: 260px;
         top: 120px;
         transition: 0.3s;
         z-index:9998;
     }
-     
 
     .sidebar.showSidebar{
         left:0;
@@ -1468,7 +1471,7 @@ table th, table td{
         position:fixed;
         overflow-y: auto;
         height: calc(100vh - 120px);
-        left:-280px;
+        left:-300px;
         width: 260px;
         top: 115px;
         transition: 0.3s ;
