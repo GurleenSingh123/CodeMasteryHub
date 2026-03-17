@@ -1436,8 +1436,8 @@ table th, table td{
         margin-bottom: 7px;
     }
 
-    .contactSection{
-        padding: 10px 40px;
+    .contactSection {
+        padding: 10px 40px;;
     }
 
     .contactSection h1{
@@ -1456,13 +1456,15 @@ table th, table td{
     }
 
     .contactForm{
-        padding: 18px 40px;
-        max-width: 320px;
+        max-width: 100%;
+        padding: 16px;
+        margin-bottom: 25px;
     }
 
     .inputField{
         padding: 12px;
         font-size: 12px;
+        width: 80%;
     }
 
     .btnMsg{
