@@ -1163,6 +1163,7 @@ table th, table td{
 
     .content{
         max-width: 600px;
+        margin: 0 auto;
     }
 
     .content h1{
@@ -1211,7 +1212,6 @@ table th, table td{
 
     .codeBox pre{
         font-size: 20px;
-
     }
 
     .tryBtn{
@@ -1219,16 +1219,35 @@ table th, table td{
         font-size: 14px;
     }
 
+    .tableContainer{
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tableContainer::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .tableContainer::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 20px;
+    }
+    
+    .tableContainer::-webkit-scrollbar-thumb {
+        background: #38bdf8;
+        border-radius: 10px;
+    }
+
     table{
         margin-top: 18px;
     }
-    
+
     table th{
         font-size: 30px;
     }
     
     table td{
-        font-size: 18px;
+        font-size: 22px;
     }
     
     table .rowHead{
@@ -1236,9 +1255,9 @@ table th, table td{
     }
     
     table th, table td{
-        padding: 18px;
+        padding: 16px;
     }
-    
+
     .anchorTag{
         font-size: 18px;
     }
@@ -1358,12 +1377,19 @@ table th, table td{
         line-height: 1.3;
     }
 
-    .footer{
+    /* .footer{
         padding: 16px;
         min-width: 650px;
+    } */
+
+    .footer{
+        padding: 16px;
+        width: 100%;
     }
 
     .footerSection{
+        display: flex;
+        flex-direction: column;
         gap: 25px;
     }
 
@@ -1520,7 +1546,10 @@ table th, table td{
     }
 
     .content{
-        max-width: 320px;
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 16px;
     }
 
     .content h1{
@@ -1555,14 +1584,28 @@ table th, table td{
         padding: 5px 12px;
         font-size: 12px;
     }
-    
-    .codeBox{
+
+    .codeBox {
         margin-top: 15px;
-        padding: 15px 36px;
-        max-width: 320px;
+        padding: 12px 16px;
+        max-width: 100%;
         margin-bottom: 20px;
-        overflow-x: auto;
-        white-space: pre;
+
+        overflow-x: auto;        /* scroll works */
+        border-radius: 12px;
+    }       
+    .codeBox::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .codeBox::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 20px;
+    }
+    
+    .codeBox::-webkit-scrollbar-thumb {
+        background: #38bdf8;
+        border-radius: 10px;
     }
 
     .codeBox pre{
@@ -1594,6 +1637,20 @@ table th, table td{
         padding: 16px;
     }
     
+    .tableContainer::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .tableContainer::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 20px;
+    }
+    
+    .tableContainer::-webkit-scrollbar-thumb {
+        background: #38bdf8;
+        border-radius: 10px;
+    }
+
     .anchorTag{
         font-size: 16px;
     }

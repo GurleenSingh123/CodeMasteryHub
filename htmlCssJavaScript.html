@@ -191,89 +191,92 @@ head.innerHTML = "Heading Changed by JavaScript!";
         
             <h2>HTML Vs CSS Vs JavaScript - Comparison Table</h2>
 
-            <table>
+            <div class="tableContainer">
 
-                <thead>
-                    <tr>
-                        <th class="rowHead">Feature</th>
-                        <th>HTML</th>
-                        <th>CSS</th>
-                        <th>JavaScript</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <th class="rowHead">Purpose</th>
-                        <td>HTML (HyperText Markup Language) creates the basic structure of a webpage. It defines what content will appear on the page, such as headings, paragraphs, links, images, and videos. Without HTML, websites cannot exist on the internet.</td>
-                        
-                        <td>CSS (Cascading Style Sheets) is used to design and style webpages, making them visually attractive. It controls elements such as fonts, colors, layout, spacing, responsiveness, and animations to enhance the overall appearance of a webpage.</td>
-                        
-                        <td>JavaScript adds functionality and interactivity to webpages. It allows webpages to respond to user actions such as scrolling, clicking buttons, typing in forms, and submitting data.</td>
-                    </tr>
+                <table>
                     
-                    <tr>
-                        <th class="rowHead">Type</th>
-                        <td><ul>
-                            <li><b>HTML - </b>The first version of HTML used to create simple webpages with basic tags.</li>
+                    <thead>
+                        <tr>
+                            <th class="rowHead">Feature</th>
+                            <th>HTML</th>
+                            <th>CSS</th>
+                            <th>JavaScript</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
                         
-                            <li><b>HTML 2.0 - </b>The second version of HTML introduced forms and more structured elements.</li>
+                        <tr>
+                            <th class="rowHead">Purpose</th>
+                            <td>HTML (HyperText Markup Language) creates the basic structure of a webpage. It defines what content will appear on the page, such as headings, paragraphs, links, images, and videos. Without HTML, websites cannot exist on the internet.</td>
+                            
+                            <td>CSS (Cascading Style Sheets) is used to design and style webpages, making them visually attractive. It controls elements such as fonts, colors, layout, spacing, responsiveness, and animations to enhance the overall appearance of a webpage.</td>
+                            
+                            <td>JavaScript adds functionality and interactivity to webpages. It allows webpages to respond to user actions such as scrolling, clicking buttons, typing in forms, and submitting data.</td>
+                        </tr>
                         
-                            <li><b>HTML 3.2 - </b>The third version of HTML added support for tables, scripting, and improved layout features.</li>
+                        <tr>
+                            <th class="rowHead">Type</th>
+                            <td><ul>
+                                <li><b>HTML - </b>The first version of HTML used to create simple webpages with basic tags.</li>
+                                
+                                <li><b>HTML 2.0 - </b>The second version of HTML introduced forms and more structured elements.</li>
+                                
+                                <li><b>HTML 3.2 - </b>The third version of HTML added support for tables, scripting, and improved layout features.</li>
+                                
+                                <li><b>HTML 4.0 - </b>This version introduced better styling support and separation of content using CSS.</li>
+                                
+                                <li><b>HTML5 - </b> The latest version of HTML that supports multimedia, semantic elements, and modern web applications.</li>
+                            </ul></td>
+                            
+                            <td><ul>
+                                <li><b>Inline CSS - </b>Inline CSS is applied directly inside HTML tags using the &lt;style&gt; attribute.</li>
+                                
+                                <li><b>Internal CSS - </b>Internal CSS is written inside the &lt;style&gt; tag in the &lt;head&gt; section of the HTML document</li>
+                                
+                                <li><b>External CSS - </b>External CSS is written in a separate .css file and linked to the HTML document. This is the most recommended method.</li>
+                            </ul></td>
+                            
+                            <td><ul>
+                                <li><b>Inline JavaScript - </b>JavaScript written directly inside HTML elements using attributes like onclick.</li>
+                                
+                                <li><b>Internal JavaScript - </b>JavaScript written inside the &lt;script&gt; tag within the HTML document.</li>
+                                
+                                <li><b>External JavaScript - </b>JavaScript written in a separate .js file and linked to the HTML document.</li>
+                            </ul></td>
+                        </tr>
                         
-                            <li><b>HTML 4.0 - </b>This version introduced better styling support and separation of content using CSS.</li>
+                        <tr>
+                            <th class="rowHead">Controls</th>
+                            <td>HTML defines the structure and content of a webpage, such as headings, paragraphs, links, images, and other elements that appear on the page.</td>
+                            
+                            <td>CSS controls the appearance of a webpage. It determines how the content looks on the screen, including fonts, colors, layout, alignment, and spacing.</td>
+                            
+                            <td>JavaScript controls the behavior of a webpage. It determines how the content responds to user actions such as clicks, animations, and form submissions.</td>
+                        </tr>
                         
-                            <li><b>HTML5 - </b> The latest version of HTML that supports multimedia, semantic elements, and modern web applications.</li>
-                        </ul></td>
-
-                        <td><ul>
-                            <li><b>Inline CSS - </b>Inline CSS is applied directly inside HTML tags using the &lt;style&gt; attribute.</li>
+                        <tr>
+                            <th class="rowHead">Runs in Browser</th>
+                            <td>Yes. The browser reads HTML first to build the structure of the webpage.</td>
+                            
+                            <td>Yes. The browser applies CSS after HTML to style and design the webpage.</td>
+                            
+                            <td>Yes. The browser executes JavaScript to make the webpage interactive and respond to user actions.</td>
+                        </tr>
                         
-                            <li><b>Internal CSS - </b>Internal CSS is written inside the &lt;style&gt; tag in the &lt;head&gt; section of the HTML document</li>
-                        
-                            <li><b>External CSS - </b>External CSS is written in a separate .css file and linked to the HTML document. This is the most recommended method.</li>
-                        </ul></td>
-
-                        <td><ul>
-                            <li><b>Inline JavaScript - </b>JavaScript written directly inside HTML elements using attributes like onclick.</li>
-                        
-                            <li><b>Internal JavaScript - </b>JavaScript written inside the &lt;script&gt; tag within the HTML document.</li>
-                        
-                            <li><b>External JavaScript - </b>JavaScript written in a separate .js file and linked to the HTML document.</li>
-                        </ul></td>
-                    </tr>
-                
-                    <tr>
-                        <th class="rowHead">Controls</th>
-                        <td>HTML defines the structure and content of a webpage, such as headings, paragraphs, links, images, and other elements that appear on the page.</td>
-
-                        <td>CSS controls the appearance of a webpage. It determines how the content looks on the screen, including fonts, colors, layout, alignment, and spacing.</td>
-
-                        <td>JavaScript controls the behavior of a webpage. It determines how the content responds to user actions such as clicks, animations, and form submissions.</td>
-                    </tr>
-
-                    <tr>
-                        <th class="rowHead">Runs in Browser</th>
-                        <td>Yes. The browser reads HTML first to build the structure of the webpage.</td>
-
-                        <td>Yes. The browser applies CSS after HTML to style and design the webpage.</td>
-
-                        <td>Yes. The browser executes JavaScript to make the webpage interactive and respond to user actions.</td>
-                    </tr>
-
-                    <tr>
-                        <th class="rowHead">Required</th>
-
-                        <td>Essential. HTML provides the basic structure of a website. Without it, a webpage cannot exist.</td>
-
-                        <td>Essential. CSS is required to style modern websites. Without CSS, webpages would appear plain and unstyled.</td>
-
-                        <td>Highly recommended. Websites can work without JavaScript, but they will not be interactive or dynamic.</td>
-                    </tr>
-                </tbody>
-                
-            </table>
+                        <tr>
+                            <th class="rowHead">Required</th>
+                            
+                            <td>Essential. HTML provides the basic structure of a website. Without it, a webpage cannot exist.</td>
+                            
+                            <td>Essential. CSS is required to style modern websites. Without CSS, webpages would appear plain and unstyled.</td>
+                            
+                            <td>Highly recommended. Websites can work without JavaScript, but they will not be interactive or dynamic.</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
             
             <div id="lessonBtns"></div>
         </div>
