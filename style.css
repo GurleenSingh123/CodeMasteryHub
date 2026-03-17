@@ -1333,9 +1333,9 @@ table th, table td{
     }
 
     .tutorialSection{
-        padding: 30px 60px;
-        max-width: 500px;
+        padding: 30px 20px; 
         margin-bottom: 60px;
+        text-align: center;
     }
 
     .tutorialSection h1{
@@ -1343,9 +1343,9 @@ table th, table td{
     }
 
     .tutorial{
-        padding: 25px;
-        width: 40%;
-        margin-bottom: 35px;
+        width: 60%;             
+        margin: 0 auto 25px auto;
+        text-align: center;
         border-left: 3px solid #1da1f2;
         border-right: 3px solid #1da1f2;
     }
