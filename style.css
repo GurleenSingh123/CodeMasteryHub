@@ -881,6 +881,7 @@ table th, table td{
     }
     
     .homePage{
+        padding: 40px 80px;
         margin-top: 40px;
     }
 
@@ -1288,6 +1289,7 @@ table th, table td{
     
     .homePage{
         margin-top: 35px;
+        padding: 10px 40px;
     }
 
     .homePage p{
