@@ -342,20 +342,6 @@ body{
     line-height: 1.5;
 }
 
-/* .card h1{
-    font-family: var(--font--lucida);
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #48c1fd;
-}
-
-.card h2{
-    font-family: var(--font--lucida);
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #48c1fd;
-} */
-
 .card ul{
     font-size: 20px;;
     line-height: 1.5;
@@ -959,9 +945,12 @@ table th, table td{
     }
 
     .whyChoose{
-        padding: 35px 70px;
+        /* padding: 35px 70px;
         max-width: 600px;
-        margin-bottom: 70px;
+        margin-bottom: 70px; */
+        padding: 30px 20px; 
+        margin-bottom: 60px;
+        text-align: center;
     }
 
     .whyChoose ul{
@@ -1297,9 +1286,12 @@ table th, table td{
     }
     
     .homeSec{
-        padding: 30px 60px;
+        /* padding: 30px 60px;
         max-width: 500px;
+        margin-bottom: 60px; */
+        padding: 40px 30px;
         margin-bottom: 60px;
+        text-align: center;
     }
     
     .head{
@@ -1317,9 +1309,9 @@ table th, table td{
     }
     
     .homeAboutDetail{
-        padding: 30px 60px;
-        max-width: 500px;
+        padding: 40px 30px; 
         margin-bottom: 60px;
+        text-align: center;
     }
 
     .homeAboutDetail p{
@@ -1333,7 +1325,7 @@ table th, table td{
     }
 
     .tutorialSection{
-        padding: 30px 20px; 
+        padding: 40px 30px; 
         margin-bottom: 60px;
         text-align: center;
     }
@@ -1366,7 +1358,7 @@ table th, table td{
     }
 
     .whyChoose{
-        padding: 30px 60px;
+        padding: 40px 30px;
         max-width: 500px;
         margin-bottom: 60px;
     }
