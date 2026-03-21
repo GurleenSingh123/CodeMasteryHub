@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with DevMastery Hub. Contact us for questions, feedback, or support related to our tutorials.">
+    <meta name="description" content="Get in touch with CodeEasy Hub. Contact us for questions, feedback, or support related to our tutorials.">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6PF7WWWQMK');
+    </script>
+
     <title>Contact Us | CodeEasy Hub</title>
     <link rel="stylesheet" href="style.css">
+
+</head> 
+<body>
+
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
@@ -16,8 +31,8 @@
         });
     })();
     </script>
-</head> 
-<body>
+
+
     <div id="navBar"></div>
     
     <div class="contactSection">
@@ -37,7 +52,7 @@
             <div class="contactFormDetail">    
                 <input type="text" placeholder="Your Name" class="inputField" id="name" required>
                 
-                <input type="text" placeholder="Your Email" class="inputField" id="email">
+                <input type="email" placeholder="Your Email" class="inputField" id="email">
                 
                 <textarea class="inputField" id="textarea" placeholder="Your Message"></textarea>
                 
