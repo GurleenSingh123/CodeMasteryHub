@@ -43,7 +43,8 @@ function setupNavigation(){
     "howInternetWorks.html", 
     "installingVsCode.html", 
     "htmlStructure.html", 
-    "htmlElements.html"
+    "htmlElements.html",
+    "htmlAttributes.html"
   ];
 
   let current = window.location.pathname.split("/").pop();
