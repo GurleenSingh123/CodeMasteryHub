@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML attributes with examples, types, and usage. Tutorial on global, event, boolean, and data attributes.">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
@@ -23,7 +24,7 @@
     <div class="layout">
         <div id="sideBar" class="sidebar"></div>
 
-        <div class="content">
+        <main class="content">
             <h1>What are HTML Attributes?</h1>
 
             <p>HTML attributes provide additional information about HTML elements. They are always written inside the opening tag.</p>
@@ -41,12 +42,12 @@
             <p><b>Here:</b></p>
             <ul>
                 <li><b>href - </b> Attribute</li>
-                <li><b>"https://example.com" - </b> Value</li>
+                <li><b>"https://example.com" - </b> Attribute value</li>
             </ul>
 
             <h2>Why HTML Attributes Exist</h2>
             <ul>
-                <li><b>Attributes Define Behavior -</b> HTML attributes play a major role in defining the behavior of HTML elements. They determine how an element acts or responds when a user interacts with the interface.</li>
+                <li><b>Attributes Define Behavior -</b> HTML attributes play a major role in defining the behavior of HTML elements. They determine how an element behaves or responds when a user interacts with the interface.</li>
 
                 <li><b>Attributes Define Appearance -</b> HTML attributes play an important role in determining how elements or content are displayed on a webpage. While HTML provides the structure of the page, attributes help define presentation details such as fonts, colors, sizes, and layout.</li>
 
@@ -58,87 +59,156 @@
             </ul>
 
             <h2>Types of Attributes</h2>
-            <p>HTML attribute can be categorized based on their usage and functionality. Each type of attribute has a differnet purpose, functionality, behaviour, styling, indentification, or accessbility.</p>
+                <p>HTML attributes can be categorized based on their usage and functionality. Each type of attribute has a different purpose, such as functionality, behavior, styling, identification, or accessibility.</p>
 
-            <p>Understanding these types helps you write clean, organized and professional HTML code.</p>
-
-            <ul>
-                <li><b>Global Atrributes - </b> Global attributes are not restricted a specific tag and can be used with almost all the HTML elements. This attribute is widely used for styling, indentification, and accessbility.</li>
-
-                <p><b>Examples:</b></p>
-                <ul>
-                    <li><b>id - </b>Attribute</li>
-                    <div class="codeBox">
-                        <pre><code>&lt;p id="intro"&gt;Welcome&lt;/p&gt;</code></pre>
-                    </div>
-                    <p>The id attribute assign a unique identity to an element.</p>
-                    <p>Cannot be reprated on the same page.</p>
-                </ul>
+                <p>Understanding these types helps you write clean, organized, and professional HTML code.</p>
 
                 <ul>
-                    <li><b>class - </b>Attribute</li>
-                    <div class="codeBox">
-                        <pre><code>&lt;p class="text"&gt;Hello World&lt;/p&gt;</code></pre>
-                    </div>
-                    <p>The class attribute can group multiple elements.</p>
-                    <p>It can be used on the same page.</p>
+
+                    <li>
+                        <b>Global Attributes - </b>
+                        Global attributes are not restricted to a specific tag and can be used with almost all HTML elements. These attributes are widely used for styling, identification, and accessibility.
+
+                        <p><b>Examples:</b></p>
+
+                        <ul>
+                            <li>
+                                <b>id - </b>Attribute
+                                <div class="codeBox">
+                                    <pre><code>&lt;p id="intro"&gt;Welcome&lt;/p&gt;</code></pre>
+                                </div>
+                                <p>The <b>id</b> attribute assigns a unique identity to an element.</p>
+                                <p>It cannot be repeated on the same page.</p>
+                            </li>
+                        
+                            <li>
+                                <b>class - </b>Attribute
+                                <div class="codeBox">
+                                    <pre><code>&lt;p class="text"&gt;Hello World&lt;/p&gt;</code></pre>
+                                </div>
+                                <p>The <b>class</b> attribute can group multiple elements.</p>
+                                <p>It can be used multiple times on the same page.</p>
+                            </li>
+                        
+                            <li>
+                                <b>style - </b>Attribute
+                                <div class="codeBox">
+                                    <pre><code>&lt;p style="color: red;"&gt;This is text&lt;/p&gt;</code></pre>
+                                </div>
+                                <p>The <b>style</b> attribute applies inline CSS to an element.</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <b>Element-Specific Attributes - </b>These attributes are used only with specific elements and define their unique functionality.
+
+                        <p><b>Examples:</b></p>
+                        
+                        <ul>
+                            <li>
+                                <b>Anchor Attributes</b>
+                                <div class="codeBox">
+                                    <pre><code>&lt;a href="https://example.com"&gt;Visit Link&lt;/a&gt;</code></pre>
+                                </div>
+                                <p><b>href - </b>Specifies the destination URL of the link.</p>
+                            </li>
+                        
+                        
+                        
+                            <li>
+                                <b>Image Attributes</b>
+                                <div class="codeBox">
+                                    <pre><code>&lt;img src="image.jpg" alt="tutorial image"&gt;</code></pre>
+                                </div>  
+                                
+                                <p><b>src - </b>Specifies the path of the image (where the image is located).</p>
+                                <p><b>alt - </b>Provides alternative text that describes the image.</p>
+                            </li>
+                        
+
+                        
+                            <li>
+                                <b>Input Attributes</b>
+                                <div class="codeBox">
+                                    <pre><code>&lt;input type="text" placeholder="Enter your name"&gt;</code></pre>
+                                </div>
+                                
+                                <p><b>type - </b>Specifies the type of input field (e.g., text, password, email).</p>
+                                <p><b>placeholder - </b>Provides a hint about the expected input.</p>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <b>Form Attributes</b>
+                                <div class="codeBox">
+                                    <pre><code>&lt;form action="/submit" method="POST"&gt;&lt;/form&gt;</code></pre>
+                                </div>
+                                
+                                <p><b>action - </b>Specifies where the form data will be sent.</p>
+                                <p><b>method - </b>Specifies the HTTP method used to send data (GET or POST).</p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+
+                        <b>Boolean Attributes - </b>These attributes are special attributes that do not require a value. If a boolean attribute is present, it is automatically considered true.
+
+                        <p><b>Example:</b></p>
+                        <div class="codeBox">
+                            <pre><code>&lt;input type="checkbox" checked&gt;</code></pre>
+                        </div>
+                        
+                        <p><b>Checked</b> means:</p>
+                        <p>The checkbox is selected.</p>
+                        
+                        <p><b>How they work:</b></p>
+                        <p>If a boolean attribute is present, it is considered true. If the attribute is not present, it is considered false.</p>
+                        
+                    </li>
+
+                    <li>
+
+                        <b>Event Attributes - </b>These attributes are used for user interactions such as clicks, typing, or mouse movements.
+
+                        <p>These attributes are mostly used with JavaScript.</p>
+                        
+                        <p><b>Example:</b></p>
+                        <div class="codeBox">
+                            <pre><code>&lt;button onclick="alert('Hello')"&gt;Click Me&lt;/button&gt;</code></pre>
+                        </div>
+
+                        <p><b>onclick - </b>Executes when the element is clicked.</p>
+
+                        <p><b>Common event attributes are:</b></p>
+                        <ul>
+                            <li>onclick</li>
+                            <li>onchange</li>
+                            <li>onmouseover</li>
+                            <li>oninput</li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+
+                        <b>Data Attributes - </b>Data attributes are used to store custom data inside HTML elements.
+                        
+                        
+                        <div class="codeBox">
+                            <pre><code>&lt;div data-user="name"&gt;&lt;/div&gt;</code></pre>
+                        </div>
+
+                        <p><b>data-user</b> means:</p>
+                        <p>It stores custom data within an HTML element, which can be accessed using JavaScript.</p>
+                    </li>
+
                 </ul>
-
-                <ul>
-                    <li><b>style - </b>Attribute</li>
-                    <div class="codeBox">
-                        <pre><code>&lt;p style="color: red;"&gt;This is a text&lt;/p&gt;</code></pre>
-                    </div>
-                    <p>style attribute applies inline css to an element.</p>
-                </ul>
-
-                <li><b>Element Specific Attribute - </b>These attributes are used with the specific elements only and define the unique functionality.</li>
-
-                <p><b>Examples:</b></p>
-                <ul>
-                    <li><b>Anchor Attribute</b></li>
-                    <div class="codeBox">
-                        <pre><code>&lt;a href="https://example.com"&gt;Visit Link&lt;/a&gt;</code></pre>
-                    </div>
-
-                    <p><b>href - </b>Tells the destination of the url.</p>
-                </ul>
-
-                <ul>
-                    <li><b>Image Attribute</b></li>
-                    <div class="codeBox">
-                        <pre><code>&lt;img src="image.jpg" alt="tutorial image"&gt;&lt;/img&gt;</code></pre>
-                    </div>  
-
-                    <p><b>src - </b>This tell the image path, where the image is located.</p>
-                    <p><b>alt - </b>This tell about the image such as image description.</p>
-                </ul>
-
-                <ul>
-                    <li><b>Input Attribute</b></li>
-                    <div class="codeBox">
-                        <pre><code>&lt;input type="text" placeholder="Enter your name"&gt;&lt;/input&gt;</code></pre>
-                    </div>
-
-                    <p><b>type - </b>This tell the type of input to be written.</p>
-                    <p><b>placeholder - </b>This tell what type of content is to be written in the input.</p>
-                </ul>
-
-                <ul>
-                    <li><b>Form Attribute</b></li>
-                    <div class="codeBox">
-                        <pre><code>&lt;form action="/submit" method="POST"&gt;&lt;/form&gt;</code></pre>
-                    </div>
-
-                    <p><b>action - </b>This tells where the data will go.</p>
-                    <p><b>method - </b>This tells the method of the form is GET or POST.</p>
-                </ul>
-<!-- 
-                <li><b>Boolean Attribute</b></li> -->
-            </ul>
 
             <div id="lessonBtns"></div>
-        </div>
+        </main>
 
     </div>
 
