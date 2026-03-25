@@ -1195,9 +1195,25 @@ table th, table td{
 
     .codeBox{
         margin-top: 18px;
-        padding: 18px 44px;
-        max-width: 600px;
+        padding: 20px 16px;
+        max-width: 100%;
         margin-bottom: 25px;
+        overflow-x: auto;
+        border-radius: 12px;
+    }
+
+    .codeBox::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .codeBox::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 20px;
+    }
+    
+    .codeBox::-webkit-scrollbar-thumb {
+        background: #38bdf8;
+        border-radius: 10px;
     }
 
     .codeBox pre{
