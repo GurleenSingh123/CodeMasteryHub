@@ -44,7 +44,8 @@ function setupNavigation(){
     "installingVsCode.html", 
     "htmlStructure.html", 
     "htmlElements.html",
-    "htmlAttributes.html"
+    "htmlAttributes.html",
+    "htmlcomments.html"
   ];
 
   let current = window.location.pathname.split("/").pop();

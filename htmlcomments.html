@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML comments with examples, syntax, types, rules, and best practices. A complete beginner-friendly guide to HTML comments.">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6PF7WWWQMK');
+    </script>
+    
+    <title>HTML Comments | CodeEasy Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+
+        <main class="content">
+
+            <h1>HTML Comments</h1>
+            <p>HTML comments are special pieces of text that are ignored by the browser. They are not displayed on the web page and are only visible to developers in the source code.</p>
+
+            <p><b>Comments are mainly used to:</b></p>
+            <ul>
+                <li>Explain the code</li>
+                <li>Add notes for future reference</li>
+                <li>Make the code easier to understand</li>
+                <li>Disable parts of the code temporarily</li>
+            </ul>
+
+            <p><b>Syntax of an HTML Comment:</b></p>
+            <div class="codeBox">
+                <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+            </div>
+
+            <p>Anything written between <code>&lt;!--</code> and <code>--&gt;</code> will not be displayed on the web page. The browser ignores the text written inside these comment tags.</p>
+
+            <p><b>Example of an HTML Comment:</b></p>
+
+            <div class="codeBox">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;HTML Comments Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;!-- This is a heading --&gt;
+    &lt;h1&gt;Welcome to CodeEasy Hub&lt;/h1&gt;
+
+    &lt;!-- This paragraph explains the website --&gt;
+    &lt;p&gt;This is a learning platform for web development.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+            </div>
+
+            <p>In this code, comments help developers understand the purpose of each part of the code more easily.</p>
+
+            <h2>Why HTML Comments are Important</h2>
+            <ul>
+                <li>
+                    <b>Improves code readability - </b>Comments make the code easier to understand for developers. Even new developers can quickly understand the structure and purpose of the code.
+
+                    <div class="codeBox">
+                        <pre><code>&lt;!-- Navbar starts here --&gt;
+&lt;nav&gt;&lt;/nav&gt;
+&lt;!-- Navbar ends here --&gt;
+</code></pre>
+                    </div>
+                </li>
+
+                <li><b>Helps in debugging - </b>Comments allow developers to temporarily disable parts of the code without deleting them.
+    
+                <div class="codeBox">
+                    <pre><code>&lt;!-- &lt;p&gt;This paragraph is temporarily disabled for testing&lt;/p&gt; --&gt;</code></pre>
+                </div>
+                </li>
+
+                <li>
+                    <b>Useful for collaboration - </b>Comments help different developers understand the code more easily. With the help of comments, multiple developers can work on the same project efficiently.
+
+                    <div class="codeBox">
+                        <pre><code>&lt;!-- Added by ABC: Footer section --&gt;
+&lt;footer&gt;...&lt;/footer&gt;
+</code></pre>
+                    </div>
+                </li>
+
+                <li><b>Organizes large codebases - </b>Comments help divide sections clearly. When there are multiple sections in the source code, comments make it easier to understand and manage the code.
+    
+                <div class="codeBox">
+<pre><code>&lt;!-- Header --&gt;
+&lt;header&gt;.....&lt;/header&gt;
+
+&lt;!-- Main --&gt;
+&lt;main&gt;.....&lt;/main&gt;
+
+&lt;!-- Footer --&gt;
+&lt;footer&gt;.....&lt;/footer&gt;
+</code></pre>
+                </div>
+                </li>
+
+            </ul>
+
+            <h2>Types of HTML Comments</h2>
+            <ul>
+                <li>
+                    <b>Single-line Comment - </b>This type of comment is used in the source code for short explanations.
+
+                    <div class="codeBox">
+                        <pre><code>&lt;!-- This is a single-line comment --&gt;</code></pre>
+                    </div>
+                </li>
+            
+
+                <li><b>Multi-line Comments - </b>HTML does not have a separate syntax for multi-line comments. You can write multiple lines inside a single comment block, making it useful for longer explanations.
+    
+                <div class="codeBox">
+<pre><code>&lt;!-- This is a multi-line comment
+It can span multiple lines within a single comment.
+It is used for longer explanations. --&gt;
+</code></pre>
+                </div>
+                </li>
+                
+                <li><b>Inline Comments - </b>This type of comment is used within a line of code. You do not need to write it on a separate line.
+    
+                <div class="codeBox">
+                    <pre><code>&lt;p&gt;Hello World&lt;/p&gt; &lt;!-- This is an inline comment --&gt;</code></pre>
+                </div>
+                </li>
+                
+            </ul>
+
+            <h2>Best Practices for HTML Comments</h2>
+            <ul>
+                <li><b>Write Clear and Meaningful Comments - </b>Comments should clearly explain the purpose of the code in simple and easy-to-understand language.</li>
+            
+                <li><b>Avoid Sensitive Information - </b>Never include sensitive information such as passwords, API keys, or private data in comments.</li>
+            
+                <li><b>Do Not Overuse Comments - </b>Avoid writing too many comments, as it can make the code messy. Use comments only where necessary.</li>
+            
+                <li><b>Keep Comments Updated - </b>Comments should be updated regularly. Outdated or incorrect comments can confuse developers.</li>
+            </ul>
+
+            <h2>Rules of HTML Comments</h2>
+            <ul>
+                <li>
+                    <b>Rule 1: Do Not Nest Comments - </b>You should not place one comment inside another. HTML does not support nested comments, and doing so can cause unexpected behavior.
+
+                    <div class="codeBox">
+                        <pre><code>&lt;!-- This is wrong &lt;!-- nested comment --&gt; --&gt;</code></pre>
+                    </div>
+
+                    <p>HTML does not support nested comments.</p>
+                </li>
+
+                <li><b>Rule 2: Always Close Comments Properly - </b>Comments should always be properly closed. If a comment is not closed, it can cause unexpected behavior in the code.
+    
+                <div class="codeBox">
+                    <pre><code>&lt;!-- This is a comment</code></pre>
+                </div>
+                </li>
+
+                <li>
+                    <b>Rule 3: Avoid Double Hyphens Inside Comments - </b>Using double hyphens (--) inside a comment can make it invalid or cause parsing issues in HTML.
+
+                    <div class="codeBox">
+                        <pre><code>&lt;!-- This -- is an invalid comment --&gt;</code></pre>
+                    </div>
+                </li>
+
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>HTML comments are an essential part of writing clean and maintainable code. They help developers understand the structure and purpose of the code without affecting the webpage output. By following best practices and rules, comments can improve readability, debugging, and collaboration.</p>
+
+            <div id="lessonBtns"></div>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+    <script src="navBar.js"></script>
+    <script src="btn.js"></script>
+    <script src="tutorial.js"></script>
+
+</body>
+</html>
