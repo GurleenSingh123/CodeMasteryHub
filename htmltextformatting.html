@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML text and formatting with examples. Understand structural, semantic, and advanced text elements like blockquote, cite, abbr, code, and pre.">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6PF7WWWQMK');
+    </script>
+
+    <title>HTML Text and Formatting | CodeEasy Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="navBar"></div>
+
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+
+        <main class="content">
+
+            <h1>HTML Text and Formatting</h1>
+
+            <p>Text is the most important part of any website. It is the content that users read, understand, and interact with. Without text, a website has no meaning or value and is completely useless.</p>
+
+            <p><b>In HTML, text is displayed using elements such as:</b></p>
+            
+            <ul>
+                <li>Headings (&lt;h1&gt; to &lt;h6&gt;)</li>
+                <li>Paragraphs (&lt;p&gt;)</li>
+                <li>Lists (&lt;ul&gt;, &lt;ol&gt;)</li>
+                <li>Inline elements (&lt;span&gt;, &lt;strong&gt;, etc.)</li>
+                <li>Advanced elements (&lt;blockquote&gt;, &lt;cite&gt;, &lt;abbr&gt;, etc.)</li>
+            </ul>
+
+            <h2>Types of Text in HTML</h2>
+            <ul>
+                <li><b>Structural Text - </b>Structural text tells the browser and search engine how the text is arranged on a website. It defines the layout and organization of the content.
+
+                <p><b>Common structural tags:</b></p>
+                
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;List 1&lt;/li&gt;
+&lt;li&gt;List 2&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+                    </div>
+                </div>
+                <button class="tryBtn">Try it Yourself</button>
+
+
+                <p><b>Why is structural text important?</b></p>
+                <ul>
+                    <li>It helps improve the readability of the code.</li>
+                    <li>It helps search engines like Google understand the content.</li>
+                    <li>It organizes the content clearly.</li>
+                </ul>
+
+                </li>
+
+                <li><b>Semantic Text - </b>Semantic tags add meaning and importance to content instead of just styling it. If these tags are not used, it becomes difficult to understand the content.
+
+                <p><b>Common semantic tags:</b></p>
+
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;p&gt;
+&lt;strong&gt;Important&lt;/strong&gt; and &lt;em&gt;emphasized&lt;/em&gt; 
+text with &lt;mark&gt;highlight&lt;/mark&gt;
+&lt;/p&gt;
+</code></pre>
+                    </div>
+                </div>
+
+                <button class="tryBtn">Try it Yourself</button>
+
+                <p><b>Why does semantic text matter?</b></p>
+                <ul>
+                    <li>It helps improve SEO.</li>
+                    <li>It makes the content meaningful and easy for users to understand.</li>
+                </ul>
+                </li>
+
+                <li><b>Presentational Text - </b>Presentational text focuses only on the appearance of the content. It does not consider the meaning of the content.
+            
+                <p><b>Common presentational elements:</b></p>
+                <ul>
+                    <li>&lt;b&gt; Makes the text bold &lt;/b&gt;</li>
+                    <li>&lt;i&gt; Makes the text italic &lt;/i&gt;</li>
+                    <li>&lt;u&gt; Underlines the text &lt;/u&gt;</li>
+                </ul>
+                
+                </li>
+            </ul>
+
+            <h2>Advanced Text Elements</h2>
+            <p>These elements are semantic tags that do not focus on how the content looks. Instead, they describe the meaning of the content, making it easier to understand.</p>
+
+            <p><b>Why are semantic tags important?</b></p>
+            
+            <ul>
+                <li><b>Improves SEO ranking - </b>Search engines like Google do not see your website like humans; they analyze the HTML code. Semantic tags help search engines understand the content better.
+                </li>
+
+                <li><b>Increases accessibility - </b>Accessibility means your website can be used by:
+                <ul>
+                    <li>Visually impaired users</li>
+                    <li>Screen reader users</li>
+                    <li>People with disabilities</li>
+                </ul>
+                </li>
+
+                <li><b>Makes the code clean and structured - </b>Semantic tags help make your code:
+                    <ul>
+                        <li>Easy to understand</li>
+                        <li>Easy to debug</li>
+                        <li>Easy to maintain</li>
+                    </ul>
+                </li>
+            </ul>
+
+            
+
+            <h2>Semantic Tags</h2>
+            <ul>
+                <li><b>&lt;blockquote&gt; - </b>The <code>&lt;blockquote&gt;</code> tag is used to represent long quotations taken from another source. It indicates that the content is not original and is referenced from another source.
+
+                <p><b>Example:</b></p>
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;blockquote&gt;This is a blockquote tag used for representing long quotations.&lt;/blockquote&gt;</code></pre>
+                    </div>
+                </div>
+            
+                <button class="tryBtn">Try it Yourself</button>
+                
+                <p><b>How it works:</b></p>
+                <ul>
+                    <li>Adds indentation by default.</li>
+                    <li>Displays content as a separate block.</li>
+                </ul>
+                </li>
+                
+                <li><b>&lt;cite&gt; - </b>This tag is used to define the source or title (such as a book, author, or other creative work).
+                    
+                <p><b>Example:</b></p>
+
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;p&gt;&lt;cite&gt;Ruskin Bond&lt;/cite&gt;&lt;/p&gt;</code></pre>
+                    </div>
+                </div>
+
+                <button class="tryBtn">Try it Yourself</button>
+
+                <p><b>How it works:</b></p>
+                <ul>
+                    <li>Typically displayed in italics.</li>
+                    <li>Helps indicate who said it and where it comes from.</li>
+                </ul>
+
+                <p><b>Combined Example:</b></p>
+
+                
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;blockquote&gt;
+Stay hungry, stay foolish.
+&lt;/blockquote&gt;
+
+&lt;cite&gt;Steve Jobs&lt;/cite&gt;
+</code></pre>
+                    </div>
+                </div>
+
+                <button class="tryBtn">Try it Yourself</button>
+
+                </li>
+
+
+
+
+
+
+                
+                <li><b>&lt;abbr&gt; - </b>The <code>&lt;abbr&gt;</code> tag defines abbreviations and acronyms and provides their full form.
+
+                <p><b>Example:</b></p>
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;p&gt;&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt; is a markup language.&lt;/p&gt;</code></pre>
+                    </div>
+                </div>
+                <button class="tryBtn">Try it Yourself</button>
+
+                <p><b>How it works:</b></p>
+                <ul>
+                    <li>The <code>title</code> attribute is used to show the full form when hovered.</li>
+                    <li>It helps users understand unfamiliar terms.</li>
+                </ul>
+                </li>
+
+                <li><b>&lt;address&gt; - </b>The <code>&lt;address&gt;</code> tag is used to represent the contact information of the author or owner of a website.
+
+                <p><b>Example:</b></p>
+
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;address&gt;
+Written by Ruskin Bond
+Email: example@gmail.com
+Location: USA (United States of America)
+&lt;/address&gt;</code></pre>
+                    </div>
+                </div>
+
+                <button class="tryBtn">Try it Yourself</button>
+
+                <p><b>Key characteristics are:</b></p>
+                <ul>
+                    <li>It is usually displayed in italics.</li>
+                    <li>It should only be used for contact-related information.</li>
+                    <li>It should not be used for general text.</li>
+                </ul>
+                </li>
+
+                <li><b>&lt;code&gt; - </b>The <code>&lt;code&gt;</code> tag is used to display small pieces of code within a sentence.
+
+                <p><b>Example:</b></p>
+
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;p&gt;Use the &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag for paragraphs.&lt;/p&gt;</code></pre>
+                    </div>
+                </div>
+                <button class="tryBtn">Try it Yourself</button>
+                    
+                <p><b>How it works:</b></p>
+                <ul>
+                    <li>Displays the text in a monospace font.</li>
+                    <li>It displays the text differently from other text.</li>
+                </ul>
+                </li>
+
+                <li><b>&lt;pre&gt; - </b>The <code>&lt;pre&gt;</code> tag is used to display preformatted text, preserving:
+
+                <ul>
+                    <li>Spaces</li>
+                    <li>Line breaks</li>
+                    <li>Indentation</li>
+                </ul>
+
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;pre&gt;
+function greet() {
+    console.log("Hello World");
+}
+&lt;/pre&gt;
+</code></pre>
+                    </div>
+                </div>
+                <button class="tryBtn">Try it Yourself</button>
+
+                <p><b>How it works:</b></p>
+                <ul>
+                    <li>Displays the content exactly as written.</li>
+                    <li>It is ideal for code blocks.</li>
+                </ul>
+                </li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>Text is the foundation of every website. No matter how advanced the design or functionality becomes, it is ultimately the text content that communicates information, delivers value, and engages users. In HTML, text is not just about writing words—it is about structuring, formatting, and giving meaning to those words in the most effective way.</p>
+
+            <div id="lessonBtns"></div>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+    <script src="navBar.js"></script>
+    <script src="btn.js"></script>
+    <script src="tutorial.js"></script>
+</body>
+</html>

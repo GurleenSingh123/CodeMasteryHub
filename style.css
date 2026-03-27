@@ -638,7 +638,7 @@ hr{
 }
 
 .content h2{
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 40px;
     margin-bottom: 6px;
     font-family: var(--font--lucida);
@@ -714,6 +714,22 @@ hr{
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.574);
     margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+.codeBox::-webkit-scrollbar {
+    height: 5px;
+}
+
+.codeBox::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.codeBox::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #38bdf8;
+    border-radius: 10px;
 }
 
 .codeBox pre{
@@ -721,7 +737,6 @@ hr{
     font-size: 22px;
     line-height: 1.4;
     margin-bottom: 10px;
-
 }
 
 .codeBox code{
@@ -734,6 +749,7 @@ hr{
     border: none;
     border-radius: 20px;
     font-size: 16px;
+    margin-bottom: 20px;
     color: white;
     background: #0ea5e9;
     cursor: pointer;

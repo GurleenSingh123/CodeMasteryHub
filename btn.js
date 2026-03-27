@@ -1,29 +1,3 @@
-// // Load button template
-// fetch("nextPrevBtn.html")
-//   .then(res => res.text())
-//   .then(data => {
-//     document.getElementById("lessonBtns").innerHTML = data;
-
-//     setupNavigation(); // After buttons load
-//   });
-
-// function setupNavigation(){
-
-//   let file = window.location.pathname.split("/").pop();
-//   let num = parseInt(file.match(/\d+/));
-
-//   document.getElementById("prevBtn").onclick = function(){
-//     if(num > 1){
-//       window.location.href = "lesson" + (num - 1) + ".html";
-//     }
-//   };
-
-//   document.getElementById("nextBtn").onclick = function(){
-//     window.location.href = "lesson" + (num + 1) + ".html";
-//   };
-// }
-
-
 // Load button template
 fetch("nextPrevBtn.html")
   .then(res => res.text())
@@ -45,7 +19,8 @@ function setupNavigation(){
     "htmlStructure.html", 
     "htmlElements.html",
     "htmlAttributes.html",
-    "htmlcomments.html"
+    "htmlcomments.html", 
+    "htmltextformatting.html"
   ];
 
   let current = window.location.pathname.split("/").pop();
