@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML table structure with examples. Understand table, tr, td, th, and caption with simple explanations for beginners.">
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6PF7WWWQMK');
+    </script>
+
+    <title>HTML Table Structure and Layout | CodeEasy Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="navBar"></div>
+
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+
+        <main class="content">
+            <h1>HTML Table Structure and Layout</h1>
+
+            <p>HTML tables are used to organize data in rows and columns, making content easy to read and understand.</p>
+
+            <p>Tables are not just about displaying data; they represent structured, semantic, and user-friendly content.</p>
+
+            <p>Tables are very important because they improve readability, SEO (Search Engine Optimization), and the overall user experience.</p>
+
+            <h2>Understanding Table Structure</h2>
+
+            <p>A table is used to display content in a grid format, such as:</p>
+
+            <ul>
+                <li>Rows (horizontal)</li>
+                <li>Columns (vertical)</li>
+                <li>Cells (intersection of a row and a column)</li>
+            </ul>
+
+            <h3>&lt;table&gt; - The Container</h3>
+
+            <p>The &lt;table&gt; tag is the foundation of every table. It acts as a container that holds all rows, columns, headers, and content.</p>
+
+            <p><b>Key Points:</b></p>
+
+            <ul>
+                <li>Everything inside a table must be placed within the &lt;table&gt; tag.</li>
+                <li>Nothing can exist in a table without the &lt;table&gt; tag.</li>
+                <li>It defines the start and end of the table.</li>
+            </ul>
+
+            <p><b>Example:</b></p>
+
+            <div class="codeBox">
+            <pre><code>&lt;table&gt;
+    &lt;!-- Table content goes here --&gt;
+&lt;/table&gt;
+</code></pre>
+            </div>
+
+            <h3>&lt;tr&gt; - Table Row</h3>
+
+            <p>The &lt;tr&gt; tag defines a row in a table.</p>
+
+            <p><b>Key Points:</b></p>
+
+            <ul>
+                <li>Each &lt;tr&gt; tag creates a horizontal row in the table.</li>
+                <li>Each row can contain multiple cells.</li>
+                <li>Tables can have multiple rows.</li>
+            </ul>
+
+            <p><b>Example:</b></p>
+
+            <div class="codeBox">
+            <pre><code>&lt;tr&gt;
+    &lt;td&gt;Row Data&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+            </div>
+
+            <h3>&lt;td&gt; - Table Data (Cells)</h3>
+
+            <p>The &lt;td&gt; tag represents individual data cells.</p>
+
+            <p><b>Key Points:</b></p>
+
+            <ul>
+                <li>Defines a single cell (data) inside a row.</li>
+                <li>This is where the actual content is placed (text, images, links, etc.).</li>
+            </ul>
+
+            <p><b>Example:</b></p>
+
+            <div class="codeBox">
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Table Content&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            </div>
+
+            <p><b>Example of a Basic Table:</b></p>
+
+            <div class="exampleContent">
+                <div class="codeBox">
+            <pre><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;HTML&lt;/th&gt;
+        &lt;th&gt;CSS&lt;/th&gt;
+        &lt;th&gt;JavaScript&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;Structure of the website&lt;/td&gt;
+        &lt;td&gt;Styling the website&lt;/td&gt;
+        &lt;td&gt;Adding functionality and interactivity to the website&lt;/td&gt;
+    &lt;/tr&gt;
+
+&lt;/table&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try it Yourself</button>
+
+            <p><b>Let's understand the table:</b></p>
+
+            <ul>
+                <li><b>&lt;table border="1"&gt; -</b> Starts the table, and <code>border="1"</code> adds a visible border around it.</li>
+
+                <li><b>First &lt;tr&gt; (Row 1) -</b> This tag defines the first row of the table.</li>
+
+                <li><b>&lt;th&gt; (Heading) -</b> The &lt;th&gt; tag is used to define the headings of the table.</li>
+
+                <li><b>Second &lt;tr&gt; (Row 2) -</b> This tag defines the second row of the table.</li>
+
+                <li><b>&lt;td&gt; (Table Data) -</b> This tag is used to add data (content) to the table cells.</li>
+            </ul>
+            <p><b>Note:</b> The <code>border="1"</code> attribute is used here for learning purposes. In modern HTML, borders are added using CSS.</p>
+
+            <h2>Table Header &lt;th&gt;</h2>
+
+            <p>The &lt;th&gt; tag is used to define a header cell in a table. It is usually placed inside the first row or the first column.</p>
+
+            <p><b>Features:</b></p>
+
+            <ul>
+                <li>Text is bold by default.</li>
+                <li>Text is center-aligned.</li>
+                <li>Helps screen readers understand the table structure.</li>
+            </ul>
+
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Language&lt;/th&gt;
+        &lt;th&gt;Purpose&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;HTML&lt;/td&gt;
+        &lt;td&gt;Structure&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+                </div>
+            </div>
+            <button class="tryBtn">Try it Yourself</button>
+
+
+            <h2>Table Caption &lt;caption&gt; - Title of the Table</h2>
+
+            <p>The &lt;caption&gt; tag provides a title or description for a table. It appears at the top of the table by default.</p>
+
+            <h4>Why is a caption important?</h4>
+
+            <ul>
+                <li><b>User understanding -</b> Before reading the table, users immediately know what the table is about:
+                    <ul>
+                        <li>What the table is about</li>
+                        <li>The kind of data it contains</li>
+                    </ul>
+                </li>
+
+                <li><b>Accessibility boost -</b> Screen readers read the caption first, helping users:
+                <ul>
+                    <li>Understand the content</li>
+                    <li>Navigate easily</li>
+                </ul>
+                </li>
+
+                <li><b>SEO advantage -</b> Helps search engines interpret the table content and improves indexing.</li>
+            </ul>
+
+            <p><b>Features:</b></p>
+
+            <ul>
+                <li>By default, it appears above the table.</li>
+                <li>It can be styled using CSS.</li>
+            </ul>
+
+            <p><b>Example:</b></p>
+
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;table border="1"&gt;
+    &lt;caption&gt;Web Development&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Subject&lt;/th&gt;
+        &lt;th&gt;Marks&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;English&lt;/td&gt;
+        &lt;td&gt;80&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+                </div>
+            </div>
+            <button class="tryBtn">Try it Yourself</button>
+
+            <h2>Conclusion</h2>
+
+            <p>HTML tables are a core part of content on a web page. When used correctly, they do much more than just display data. <b>They:</b></p>
+
+            <ul>
+                <li>Improve content organization</li>
+                <li>Enhance readability for users</li>
+                <li>Boost SEO performance</li>
+            </ul>
+
+            <p>Mastering HTML tables is essential for displaying structured data effectively and building professional, user-friendly websites.</p>
+
+            <div id="lessonBtns"></div>
+        </main>
+    </div>
+
+
+    <div id="footer"></div>
+    <script src="navBar.js"></script>
+    <script src="btn.js"></script>
+    <script src="tutorial.js"></script>
+
+
+</body>
+</html>
