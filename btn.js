@@ -21,7 +21,8 @@ function setupNavigation(){
     "htmlAttributes.html",
     "htmlcomments.html", 
     "htmltextformatting.html", 
-    "htmltablestructure.html"
+    "htmltablestructure.html", 
+    "htmltablefeatures.html"
   ];
 
   let current = window.location.pathname.split("/").pop();

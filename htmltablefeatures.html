@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn advanced HTML table features including thead, tbody, tfoot, colspan, rowspan, and accessibility best practices with examples.">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6PF7WWWQMK');
+    </script>
+
+    <title>HTML Advanced Table And Features | CodeEasy Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="navBar"></div>
+
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+
+        <main class="content">
+            <h1>Advanced Table Features</h1>
+            <p>HTML tables are not only used for displaying data; they are also used to organize information in a structured, meaningful, and readable way.</p>
+            <p>To make tables professional, accessible, and easy to understand, we use advanced features.</p>
+
+            <h2>Table Sections: &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h2>
+            <p>These tags divide the table into three logical sections.</p>
+
+            <h4>&lt;thead&gt; - (Table Head)</h4>
+            <ul>
+                <li>Helps browsers and search engines understand the structure.</li>
+                <li>Contains the heading row of the table.</li>
+                <li>Usually uses &lt;th&gt; (bold and centered by default).</li>
+            </ul>
+
+            <div class="codeBox">
+                <pre><code>&lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Subject&lt;/th&gt;
+        &lt;th&gt;Marks&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+</code></pre>
+            </div>
+
+            <h4>&lt;tbody&gt; - (Table Body)</h4>
+            <ul>
+                <li>Contains the main content of the table.</li>
+                <li>The &lt;tbody&gt; tag can include multiple rows.</li>
+                <li>This is the main part of the table; without it, the table has no meaningful data.</li>
+            </ul>
+            
+            <div class="codeBox">
+                <pre><code>&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Maths&lt;/td&gt;
+        &lt;td&gt;85&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;</code></pre>
+            </div>
+
+            <h4>&lt;tfoot&gt; - (Table Footer)</h4>
+            <ul>
+                <li>Can appear before or after &lt;tbody&gt; in the code.</li>
+                <li>Contains totals, averages, or summaries.</li>
+                <li>Useful in reports, bills, and result tables.</li>
+            </ul>
+
+            <div class="codeBox">
+                <pre><code>&lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Total&lt;/td&gt;
+        &lt;td&gt;80&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tfoot&gt;
+                </code></pre>
+            </div>
+
+            <p>Even if &lt;tfoot&gt; is written before &lt;tbody&gt;, it is still displayed at the bottom of the table. This shows that semantic structure is prioritized over the order in the code.</p>
+
+            <h2>Colspan and Rowspan (Merging Cells)</h2>
+            <p>These attributes are used when we need a cell to span across multiple rows or columns.</p>
+
+            <h4>colspan - (Column Span)</h4>
+            <p>This attribute allows a cell to span across multiple columns.</p>
+
+            <p><b>Features:</b></p>
+            <ul>
+                <li>This attribute merges columns horizontally.</li>
+                <li>One cell takes the space of multiple columns.</li>
+            </ul>
+
+            <p><b>Why do we use it?</b></p>
+            <ul>
+                <li>It is used to create a heading across multiple columns in a table.</li>
+                <li>It helps avoid repeating the same data in the table.</li>
+            </ul>
+
+            <p><b>Example:</b></p>
+            <div class="codeBox">
+                <pre><code>&lt;td colspan="3"&gt;Total Marks&lt;/td&gt;</code></pre>
+            </div>
+
+            <p><b>This means:</b></p>
+            <p>This single cell will take up the space of 3 columns.</p>
+
+            <h4>rowspan - (Row Span)</h4>
+            <p>This attribute allows a cell to span across multiple rows in a table.</p>
+
+            <p><b>Features:</b></p>
+            <ul>
+                <li>Merges rows vertically.</li>
+                <li>One cell takes the space of multiple rows.</li>
+            </ul>
+
+            <p><b>Why do we use it?</b></p>
+            <ul>
+                <li>It is used to group related data.</li>
+                <li>It helps show common information across multiple rows.</li>
+            </ul>
+
+            <p><b>Example:</b></p>
+            <div class="codeBox">
+                <pre><code>&lt;td rowspan="2"&gt;English&lt;/td&gt;</code></pre>
+            </div>
+            <p>This cell will span across 2 rows vertically.</p>
+            
+            <h2>Table Accessibility</h2>
+            <p>Table accessibility means making your table usable for all users:</p>
+            <ul>
+                <li>Visually impaired users.</li>
+                <li>People using screen readers.</li>
+            </ul>
+
+            <p><b>Best practices explained:</b></p>
+
+            <ul>
+                <li><b>Use &lt;th&gt; for headings - </b>
+                    <ul>
+                        <li>It helps identify header cells.</li>
+                        <li>Screen readers treat them differently.</li>
+                    </ul>
+                </li>
+            
+                <li><b>Scope attribute - </b>
+                    <div class="codeBox">
+                        <pre><code>&lt;th scope="col"&gt;Subject&lt;/th&gt;
+&lt;th scope="row"&gt;English&lt;/th&gt;
+</code></pre>
+                    </div>
+                    
+                    
+                    <ul>
+                        <li><b>scope="col" - </b> It is used for column headers.</li>
+                        <li><b>scope="row" - </b> It is used for row headers.</li>
+                    </ul>
+                </li>
+
+                <li><b>Use &lt;caption&gt; - </b>
+                    <div class="codeBox">
+                        <pre><code>&lt;caption&gt;Subject Names&lt;/caption&gt;</code></pre>
+                    </div>
+                
+                    <ul>
+                        <li>This provides a title for your table.</li>
+                        <li>It helps users understand the table content more easily.</li>
+                    </ul>
+                </li>
+
+                <li><b>Avoid Complex Layouts - </b>
+                    <ul>
+                        <li>Too many merged cells can confuse users.</li>
+                        <li>Keep the table simple and logical so that it is easy to understand.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Semantic Tables</h2>
+            <p>Using HTML tags based on their meaning helps ensure that the correct tags are used.</p>
+
+            <p><b>Non-Semantic Table</b></p>
+            <div class="codeBox">
+                <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Subject&lt;/td&gt;
+        &lt;td&gt;Marks&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            </div>
+
+            <p><b>Problem:</b></p>
+            <ul>
+                <li>In this code, there is no clear difference between headers and data.</li>
+                <li>It is hard for search engines to understand the data.</li>
+            </ul>
+
+            <p><b>Semantic Table</b></p>
+            <div class="codeBox">
+                <pre><code>&lt;table border="1"&gt;
+    &lt;caption&gt;Student Marks&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope="col"&gt;Subject&lt;/th&gt;
+            &lt;th scope="col"&gt;Marks&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;          
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;English&lt;/td&gt;
+            &lt;td&gt;92&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+            </div>
+
+            <button class="tryBtn">Try it yourself</button>
+
+            <p><b>Benefits of Semantic Tables</b></p>
+            <ul>
+                <li>Easier for search engines (SEO - Search Engine Optimization) to understand.</li>
+                <li>Improves accessibility.</li>
+                <li>Cleaner code.</li>
+                <li>Easier for developers to maintain.</li>
+                <li>Provides a more professional structure.</li>
+            </ul>
+
+
+            <h2>Conclusion</h2>
+            <p>Advanced table features are not just about presenting data; they are about displaying content in a clear, structured, and meaningful way.</p>
+                    
+            <p>A well-designed table helps users understand data more easily by:</p>
+                    
+            <ul>
+                <li>Supporting accessibility for all users.</li>
+                <li>Improving the user experience.</li>
+                <li>Making the code easier for developers to debug.</li>
+            </ul>
+
+
+            <div id="lessonBtns"></div>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+    <script src="navBar.js"></script>
+    <script src="btn.js"></script>
+    <script src="tutorial.js"></script>
+
+</body>
+</html>
