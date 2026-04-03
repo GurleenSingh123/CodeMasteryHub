@@ -23,7 +23,8 @@ function setupNavigation(){
     "htmltextformatting.html", 
     "htmltablestructure.html", 
     "htmltablefeatures.html", 
-    "formstructure.html"
+    "formstructure.html", 
+    "inputcontrol.html"
   ];
 
   let current = window.location.pathname.split("/").pop();

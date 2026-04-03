@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML input controls like text, radio buttons, checkboxes, dropdowns, and textarea with examples. Beginner-friendly guide by CodeEasy Hub.">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1745671140751630"
+     crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6PF7WWWQMK');
+    </script>
+
+
+    <title>Input Controls and User Interaction In HTML | CodeEasy Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+
+        <main class="content">
+            <h1>HTML Input Controls And User Interaction</h1>
+            <p>Input controls are the foundation of user interaction in HTML forms. They allow users to provide data, which is later processed on the backend using technologies like Node.js, PHP, etc.</p>
+
+            <p>The &lt;input&gt; tag is the most commonly used form element. It is a self-closing tag and is very flexible because its behavior changes based on the <strong>type</strong> attribute.</p>
+
+            <h2>Commonly Used Input Types in HTML</h2>
+            <ul>
+                <li><p><b>Text Input (type="text") - </b>A text input field is used to enter single-line data manually using the keyboard.</p>
+                
+                <p><b>Used mainly for:</b></p>
+                <ul>
+                    <li>Names</li>
+                    <li>Usernames</li>
+                    <li>Titles</li>
+                </ul>
+            
+                <p><b>For example:</b></p>
+            
+                <div class="codeBox">
+                    <pre><code>&lt;input type="text" name="username" placeholder="Enter your username"&gt;</code></pre>
+                </div>
+
+                <p><b>Explanation:</b></p>
+                <ul>
+                    <li>type is used to define the type of input field (e.g., text).</li>
+                    <li>name is used to send data to the server.</li>
+                    <li>placeholder specifies the text that appears inside the input field as a hint.</li>
+                </ul>
+
+            </li>
+
+            <li><p><b>Radio Button (type="radio") - </b>A radio button is used to select only one option from multiple choices.</p>
+
+            <p><b>Used for:</b></p>
+            <ul>
+                <li>Gender selection</li>
+                <li>Payment method</li>
+                <li>Yes/No options</li>
+            </ul>
+
+            <p><b>For example:</b></p>
+
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;input type="radio" name="gender" value="male"&gt; Male
+&lt;input type="radio" name="gender" value="female"&gt; Female
+</code></pre>
+                    </div>
+                </div>
+
+                <button class="tryBtn">Try it Yourself</button>
+
+                <p>The <b>name</b> attribute should be the same for all radio input fields because the browser groups them together.</p>
+
+                </li>
+
+                <li><p><b>Checkbox (type="checkbox") - </b>Checkboxes allow users to select zero, one, or multiple options.</p>
+    
+                <p><b>Used for:</b></p>
+                <ul>
+                    <li>Accepting terms and conditions</li>
+                    <li>Selecting multiple products</li>
+                    <li>Skills</li>
+                    <li>Hobbies</li>
+                </ul>
+                
+
+                <p><b>For example: </b></p>
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;input type="checkbox" name="hobbies" value="music"&gt; Music
+&lt;input type="checkbox" name="hobbies" value="dance"&gt; Dance
+&lt;input type="checkbox" name="hobbies" value="cricket"&gt; Cricket
+</code></pre>
+                    </div>
+                </div>
+
+                <button class="tryBtn">Try it Yourself</button>
+
+                <p>Use different values for each checkbox; otherwise, the backend cannot distinguish between them.</p>
+                </li>
+
+            </ul>
+
+            <h2>Select Dropdown (&lt;select&gt;)</h2>
+            <p>A dropdown menu is created using the &lt;select&gt; tag. It is a form control that provides a predefined list of options from which users can select.</p>
+
+            <p>Instead of typing manually, users can simply select an option, making input faster, more accurate, and controlled.</p>
+
+            <p><b>Why are dropdowns used?</b></p>
+            <ul>
+                <li>Avoid spelling mistakes or invalid entries.</li>
+                <li>Provide a clean and organized UI.</li>
+            </ul>
+
+            <p><b>For example:</b></p>
+            <ul>
+                <li>Selecting a country (India, USA, Russia)</li>
+                <li>Choosing a course (BCA, BBA, BCom)</li>
+                <li>Choosing a payment method</li>
+            </ul>
+
+            <p><b>Basic Structure of &lt;select&gt;:</b></p>
+
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;select name="country"&gt;
+    &lt;option value="India"&gt;India&lt;/option&gt;
+    &lt;option value="USA"&gt;USA&lt;/option&gt;
+    &lt;option value="UK"&gt;UK&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try It Yourself</button>
+
+            <p><b>Explanation:</b></p>
+            <ul>
+                <li>&lt;select&gt; - It acts as a container and holds all the options.</li>
+                <li>&lt;option&gt; - It represents each choice; users select one of these options.</li>
+                <li>value - The value written here is sent to the backend.</li>
+            </ul>
+
+            <h2>Textarea (&lt;textarea&gt;)</h2>
+            <p>A &lt;textarea&gt; is an HTML form element that allows users to enter multi-line text. This means that text can be written in paragraphs and is not restricted to a single line. It is mainly used to collect long-form content.</p>
+
+            <p><b>Why is &lt;textarea&gt; used?</b></p>
+            <ul>
+                <li>Writing feedback messages</li>
+                <li>Entering long content</li>
+                <li>Product descriptions</li>
+            </ul>
+            
+            <p><b>Basic Syntax:</b></p>
+            <div class="codeBox">
+                <pre><code>&lt;textarea name="message"&gt;&lt;/textarea&gt;</code></pre>
+            </div>
+            
+            <p><b>For example:</b></p>
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;textarea name="feedback" rows="5" cols="30" placeholder="Enter your message here" required&gt;&lt;/textarea&gt;</code></pre>
+                </div>
+            </div>
+            
+            <button class="tryBtn">Try it Yourself</button>
+
+            <p><b>Explanation:</b></p>
+            <ul>
+                <li>The <b>name</b> attribute is used to send data to the server.</li>
+                <li>The <b>rows</b> attribute is used to define the height of the textarea.</li>
+                <li>The <b>cols</b> attribute is used to define the width of the textarea.</li>
+                <li>The <b>placeholder</b> attribute is used to show hint text inside the textarea.</li>
+                <li>The <b>required</b> attribute makes the field mandatory; the form will not be submitted if the textarea is empty.</li>
+            </ul>
+
+
+            <h2>Conclusion</h2>
+
+            <p>Mastering these input controls is essential for building modern web applications. They not only improve user experience but also ensure accurate data collection, making your websites more efficient, reliable, and professional.</p>
+
+            <div id="lessonBtns"></div>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+    <script src="btn.js"></script>
+    <script src="navBar.js"></script>
+    <script src="tutorial.js"></script>
+
+</body>
+</html>
