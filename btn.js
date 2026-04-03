@@ -22,7 +22,8 @@ function setupNavigation(){
     "htmlcomments.html", 
     "htmltextformatting.html", 
     "htmltablestructure.html", 
-    "htmltablefeatures.html"
+    "htmltablefeatures.html", 
+    "formstructure.html"
   ];
 
   let current = window.location.pathname.split("/").pop();

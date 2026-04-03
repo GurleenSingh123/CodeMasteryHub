@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Learn HTML forms in an easy way. Understand form structure, input fields, attributes and real examples for beginners.">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1745671140751630"
+     crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6PF7WWWQMK');
+    </script>
+
+    <title>Form Structure and Attributes | CodeEasy Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+
+        <main class="content">
+
+            <h1>Understanding HTML Forms</h1>
+
+            <p>The &lt;form&gt; tag is the main container that holds all form fields like input boxes, buttons, and dropdowns.</p>
+                    
+            <p>An HTML form is used to collect data from users.</p>
+                    
+            <p><b>For Example:</b></p>
+            <ul>
+                <li>Registration forms</li>
+                <li>Login forms</li>
+                <li>Contact forms</li>
+                <li>Search boxes</li>
+            </ul>
+            
+            <p>When a user fills in the details, the data is sent to the server for processing. Once processed, the response can be sent back to you via email or another method.</p>
+
+            <h2>The &lt;form&gt; element</h2>
+
+            <p>The &lt;form&gt; element is the main container that holds all the input fields and controls.</p>
+
+            <p>Users cannot interact with the form without this tag.</p>
+
+            <p><b>For example:</b></p>
+            <div class="codeBox">
+                <pre><code>&lt;form&gt;
+    &lt;!-- All the content of the form is written inside this tag --&gt;
+&lt;/form&gt;
+</code></pre>
+            </div>
+
+            <h2>Important Attributes</h2>
+            <ul>
+                <li><b>action - </b> This attribute is used to define where the form data will be sent.
+    
+                <div class="codeBox">
+                    <pre><code>&lt;form action="submit.php"&gt;</code></pre>
+                </div>
+
+                <p>When the user clicks the submit button, the data is sent to the submit.php file.</p>
+                </li>
+
+
+                <li><b>method - </b> This attribute is used to define how the data will be sent.
+
+                <p><b>There are two methods for sending data:</b></p>
+                                
+                <ul>
+                    <li>
+                        <b>GET Method - </b> In this method, the data is sent through the URL.
+                        <p>It is used for search forms, filters, and senstive data.</p>
+                        
+                        <p><b>For Example:</b></p>
+                        <div class="codeBox">
+                            <pre><code>&lt;form action="submit.php" method="GET"&gt;</code></pre>
+                        </div>
+                    
+                        <p><b>Features:</b></p>
+                      
+                        <ul>
+                            <li>Data is visible in the URL.</li>
+                            <li>It has a limited data size.</li>
+                            <li>It can be easily bookmarked.</li>
+                        </ul>
+                            
+                        <p><b>Disadvantage:</b></p>
+                        <ul>
+                            <li>Data is not secure; anyone can see it.</li>
+                        </ul>
+                    </li>
+                
+                    <li><b>POST Method - </b> In this method, the data is sent inside the request body (not in the URL).
+       
+                    <p>It is used for login forms, registration, and sensitive data.</p>
+
+                    <p><b>For Example:</b></p>
+                    <div class="codeBox">
+                        <pre><code>&lt;form action="submit.php" method="POST"&gt;</code></pre>
+                    </div>
+                
+                    <p><b>Features:</b></p>
+                    <ul>
+                        <li>Data is hidden from the URL.</li>
+                        <li>It is more secure than <b>GET</b>.</li>
+                        <li>It can send large amounts of data.</li>
+                        <li>It is used for sensitive information (passwords, forms, etc.).</li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+
+
+                <li><b>name attribute - </b> The name attribute is used in a form to identify the input field when the data is sent.
+    
+                <p><b>For Example:</b></p>
+                <div class="codeBox">
+                    <pre><code>&lt;input type="text" name="username"&gt;</code></pre>
+                </div>
+            
+                <p><b>What will happen in this code?</b></p>
+                    <p>If the user enters "John" in the input field, the data sent will be: <code>username=John</code></p>
+                </li>
+
+                <li><b>placeholder attribute - </b> This attribute is used to define a hint for the input field.
+    
+                <p><b>For Example:</b></p>
+                <div class="codeBox">
+                    <pre><code>&lt;input placeholder="Enter your name"&gt;</code></pre>
+                </div>
+            
+                <p>Placeholder defines what the input field is asking the user to enter.</p>
+
+                </li>
+
+                <li>
+
+                <p><b>Form Example:</b></p>
+
+                <div class="exampleContent">
+                    <div class="codeBox">
+                        <pre><code>&lt;form action="submit.php" method="POST"&gt;
+    &lt;input type="text" name="username" placeholder="Enter your username"&gt;
+    &lt;input type="email" name="email" placeholder="Enter your email"&gt;
+    &lt;input type="password" name="password" placeholder="Enter your password"&gt;
+&lt;/form&gt;
+</code></pre>
+                    </div>
+                </div>
+
+                <button class="tryBtn">Try It Yourself</button>
+
+                <ul>
+                    <li>The &lt;form&gt; tag is the main container in which all the form data is collected.</li>
+                    <li>The &lt;input&gt; tag is used by users to enter data into the form.</li>
+                </ul>
+                </li>
+                
+            </ul>
+
+            <h2>Conclusion</h2>
+
+            <p>HTML forms are one of the most important parts of web development. They help users interact with a website by entering data into input fields.</p>
+
+            <p>The &lt;form&gt; tag acts as a container, while different input types help collect various kinds of data such as text, numbers, emails, checkboxes, and many more.</p>
+
+
+            <div id="lessonBtns"></div>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+    <script src="btn.js"></script>
+    <script src="navBar.js"></script>
+    <script src="tutorial.js"></script>
+
+
+</body>
+</html>
