@@ -1,22 +1,3 @@
-// window.onload = function () {
-
-//     // Get code from localStorage
-//     let savedCode = localStorage.getItem("editorCode");
-
-//     if (savedCode) {
-//         document.getElementById("code").value = savedCode;
-//     }
-
-//     // Run automatically
-//     document.getElementById("runBtn").click();
-// };
-
-
-// document.getElementById("runBtn").addEventListener("click", function () {
-//     let code = document.getElementById("code").value;
-//     document.getElementById("output").srcdoc = code;
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const runBtn = document.getElementById("runBtn");

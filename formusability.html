@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn form usability and accessibility in HTML with examples. Understand labels, fieldset, legend, and best practices for creating user-friendly forms.">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1745671140751630"
+     crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6PF7WWWQMK');
+    </script>
+
+
+    <title>Form Usability and Accessibility in HTML | CodeEasy Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+
+        <main class="content">
+            <h1>Form Usability and Accessibility</h1>
+
+            <p>Form usability and accessibility are two of the most important concepts in web development when it comes to designing forms that are easy to use, inclusive, and effective.</p>
+
+            <h2>What is Form Usability?</h2>
+
+            <p>Form usability refers to how easy it is for users to understand, fill out, and successfully submit a form.</p>
+
+            <p><b>Why is form usability important?</b></p>
+
+            <ul>
+                <li>Reduces confusion and minimizes errors.</li>
+                <li>Requires less effort from users.</li>
+                <li>Helps users complete tasks quickly and efficiently.</li>
+            </ul>
+
+            <p><b>Key characteristics of good usability are:</b></p>
+
+            <ul>
+                <li><b>Simplicity - </b>A good form is simple and clean. It only asks for the necessary information.</li>
+                <li><b>Clear Instructions - </b>Users should immediately understand what the form is about and how to enter the data.</li>
+                <li><b>Logical Structure - </b>Fields should be arranged in a natural and logical order from top to bottom.</li>
+            </ul>
+
+            <h2>What is Form Accessibility?</h2>
+
+            <p>Form accessibility ensures that all users, including people with disabilities, can understand and interact with a form effectively.</p>
+
+            <p><b>Key characteristics of good accessibility are:</b></p>
+
+            <ul>
+                <li><b>Proper Labels - </b>Every input must have a label so that screen readers can understand what information needs to be entered.</li>
+                <li><b>Clear Indicators - </b>Users should be able to easily identify which field is currently active.</li>
+                <li><b>Clear Error Messages - </b>Errors should be easy to understand and clearly explain what went wrong.</li>
+            </ul>
+
+            <h2>Labels in HTML Forms</h2>
+
+            <p>The &lt;label&gt; element in HTML is used to describe an input field, helping users understand what information needs to be entered.</p>
+
+            <p><b>Basic syntax of a label:</b></p>
+
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username"&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try it Yourself</button>
+
+            <p><b>Explanation: </b></p>
+
+            <ul>
+                <li>The <b>for</b> attribute in the &lt;label&gt; element connects with the <b>id</b> attribute of the input field.</li>
+                <li>When a user clicks on the label, the input field is automatically focused.</li>
+            </ul>
+
+            <p><b>Why are labels important?</b></p>
+
+            <ul>
+                <li><b>Improves user experience - </b>Labels make forms easier to understand and help users identify what and where to enter information.</li>
+                <li><b>Increases clickable area - </b>When labels are properly connected, clicking on them focuses the input field.</li>
+                <li><b>Enhances accessibility - </b>Labels are essential for users who rely on screen readers.</li>
+            </ul>
+
+            <h2>Fieldset and Legend in HTML Forms</h2>
+
+            <p>When creating forms in HTML, it is important to organize input fields in a structured, clear, and easy-to-understand manner. This is where the &lt;fieldset&gt; and &lt;legend&gt; elements are used.</p>
+
+            <h3>What is &lt;fieldset&gt; in HTML?</h3>
+
+            <p>The &lt;fieldset&gt; element is used to group related form elements within a form. In simple terms, it creates a section or box around related inputs.</p>
+
+            <p><b>Basic Syntax: </b></p>
+            <div class="codeBox">
+                <pre><code>&lt;fieldset&gt;
+    &lt;!-- Form elements go here --&gt;
+&lt;/fieldset&gt;</code></pre>
+            </div>
+
+            <p><b>Example:</b></p>
+
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;form&gt;
+    &lt;fieldset&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" placeholder="Enter your name"&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" placeholder="Enter your email"&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try it Yourself</button>
+
+            <p><b>Explanation:</b></p>
+
+            <ul>
+                <li>In this code, the &lt;fieldset&gt; element is used to group related elements inside a box.</li>
+                <li>It helps users understand that these fields belong together.</li>
+            </ul>
+
+            <h3>What is &lt;legend&gt; in HTML?</h3>
+
+            <p>The &lt;legend&gt; element is used to define a title or caption for a &lt;fieldset&gt;.</p>
+
+            <p><b>Basic Syntax:</b></p>
+            <div class="codeBox">
+                <pre><code>&lt;fieldset&gt;
+    &lt;legend&gt;title for the form&lt;/legend&gt;
+&lt;/fieldset&gt;
+</code></pre>
+            </div>
+
+            <p><b>Example:</b></p>
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;form&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Personal Information&lt;/legend&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" placeholder="Enter your name"&gt;
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" placeholder="Enter your email"&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+                </div>
+            </div>
+            <button class="tryBtn">Try it Yourself</button>
+
+            <p><b>Explanation:</b></p>
+
+            <ul>
+                <li>The &lt;legend&gt; tag is used to describe what the section is about.</li>
+                <li>The &lt;legend&gt; tag appears as a heading for the &lt;fieldset&gt;.</li>
+            </ul>
+
+            <p><b>Best Practices:</b></p>
+
+            <ul>
+                <li><b>Use &lt;fieldset&gt; for related fields only - </b>Group only those fields that are logically connected.</li>
+                <li><b>Always add a &lt;legend&gt; tag - </b>Never leave a &lt;fieldset&gt; without a legend.</li>
+                <li><b>Avoid overuse - </b>Do not create too many fieldsets unnecessarily.</li>
+            </ul>
+
+            <!-- <h2>Complete HTML Form Example</h2>
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;form method="POST" &gt;
+
+&lt;!-- Personal Information --&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Personal Information&lt;/legend&gt;
+
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" placeholder="Enter your name" required&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" placeholder="Enter your email" required&gt;
+
+        &lt;p&gt;Gender:&lt;/p&gt;
+
+        &lt;label for="male"&gt;
+            &lt;input type="radio" id="male" name="gender" value="male" required&gt; Male
+        &lt;/label&gt;
+
+        &lt;label for="female"&gt;
+            &lt;input type="radio" id="female" name="gender" value="female"&gt; Female
+        &lt;/label&gt;
+    &lt;/fieldset&gt;
+
+    &lt;!-- Preferences --&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Preferences&lt;/legend&gt;
+
+        &lt;p&gt;Skills:&lt;/p&gt;
+
+        &lt;label&gt;
+            &lt;input type="checkbox" name="skill[]" value="html"&gt; HTML
+        &lt;/label&gt;
+
+        &lt;label&gt;
+            &lt;input type="checkbox" name="skill[]" value="css"&gt; CSS
+        &lt;/label&gt;
+
+        &lt;label&gt;
+            &lt;input type="checkbox" name="skill[]" value="javascript"&gt; JavaScript
+        &lt;/label&gt;
+    &lt;/fieldset&gt;
+
+    &lt;!-- Message --&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Message&lt;/legend&gt;
+
+        &lt;label for="message"&gt;Your Message:&lt;/label&gt;
+        &lt;br&gt;
+        &lt;textarea id="message" name="message" placeholder="Enter your message" rows="4" cols="30" required&gt;&lt;/textarea&gt;
+    &lt;/fieldset&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+
+&lt;/form&gt;
+</code></pre>
+                </div>
+            </div>
+            <button class="tryBtn">Try it yourself</button> -->
+
+            <h2>Conclusion</h2>
+
+            <p>HTML forms are essential for collecting user data, but their effectiveness depends on how well they are designed. Features like validation ensure correct input, while elements such as &lt;label&gt;, &lt;fieldset&gt;, and &lt;legend&gt; improve clarity and structure.</p>
+
+            <p>By following proper usability, accessibility, and UX guidelines, you can create forms that are easy to use, well-organized, and accessible to all users.</p>
+
+            <div id="lessonBtns"></div>
+        </main>
+
+    </div>
+
+    <div id="footer"></div>
+    <script src="btn.js"></script>
+    <script src="navBar.js"></script>
+    <script src="tutorial.js"></script>
+
+</body>
+</html>
