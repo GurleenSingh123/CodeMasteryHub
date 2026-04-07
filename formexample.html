@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1745671140751630"
+     crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6PF7WWWQMK');
+    </script>
+
+
+    <title>Complete HTML Form Example with Explanation | CodeEasy Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+
+        <main class="content">
+            <h1>Complete HTML Form Example</h1>
+
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code id="formExample">&lt;form onsubmit="showData(event)" method="POST" &gt;
+
+&lt;!-- Personal Information --&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Personal Information&lt;/legend&gt;
+
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" placeholder="Enter your name" required&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" placeholder="Enter your email" required&gt;
+
+        &lt;p&gt;Gender:&lt;/p&gt;
+
+        &lt;label for="male"&gt;
+            &lt;input type="radio" id="male" name="gender" value="male" required&gt; Male
+        &lt;/label&gt;
+
+        &lt;label for="female"&gt;
+            &lt;input type="radio" id="female" name="gender" value="female"&gt; Female
+        &lt;/label&gt;
+    &lt;/fieldset&gt;
+
+    &lt;!-- Preferences --&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Preferences&lt;/legend&gt;
+
+        &lt;p&gt;Skills:&lt;/p&gt;
+
+        &lt;label&gt;
+            &lt;input type="checkbox" name="skill[]" value="html"&gt; HTML
+        &lt;/label&gt;
+
+        &lt;label&gt;
+            &lt;input type="checkbox" name="skill[]" value="css"&gt; CSS
+        &lt;/label&gt;
+
+        &lt;label&gt;
+            &lt;input type="checkbox" name="skill[]" value="javascript"&gt; JavaScript
+        &lt;/label&gt;
+    &lt;/fieldset&gt;
+
+    &lt;!-- Message --&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Message&lt;/legend&gt;
+
+        &lt;label for="message"&gt;Your Message:&lt;/label&gt;
+        &lt;br&gt;
+        &lt;textarea id="message" name="message" placeholder="Enter your message" rows="4" cols="30" required&gt;&lt;/textarea&gt;
+    &lt;/fieldset&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+
+&lt;/form&gt;
+
+&lt;div id="result"&gt;&lt;/div&gt;
+
+</code></pre>
+                </div>
+            </div>
+            <button class="tryBtn">Try it yourself</button>
+
+            <h2>Explanation:</h2>
+
+            <h3>Overall Structure</h3>
+            <p>This is a complete HTML form used to collect user data such as:</p>
+            <ul>
+                <li>Name and Email</li>
+                <li>Gender</li>
+                <li>Skills</li>
+                <li>Message</li>
+            </ul>
+
+            <div class="codeBox">
+                <pre><code>&lt;form onsubmit="showData(event)" method="POST"&gt;</code></pre>
+            </div>
+
+            <ul>
+                <li><b>onsubmit="showData(event)" - </b>This attribute calls a JavaScript function when the form is submitted.</li>
+                <li><b>method="POST" - </b>The data is sent securely (not visible in the URL).</li>
+            </ul>
+
+            <h3>Personal Information Section</h3>
+            
+            <div class="codeBox">
+               <pre><code>&lt;fieldset&gt; 
+    &lt;legend&gt;Personal Information&lt;/legend&gt;
+<code></pre></div>
+
+            <ul>
+                <li><b>&lt;fieldset&gt; - </b>This tag is used to group related input fields.</li>
+                <li><b>&lt;legend&gt; - </b>This tag provides a title for the group.</li>
+            </ul>
+
+            <h3>Name Input</h3>
+            <div class="codeBox">
+                <pre><code>&lt;input type="text" placeholder="Enter your name" name="name" id="name" required&gt;</code></pre>
+            </div>
+
+            <ul>
+                <li><b>type="text" - </b>This attribute specifies that the input field accepts text.</li>
+                <li><b>placeholder - </b>This attribute displays a hint to the user about what to enter in the input field.</li>
+                <li><b>required - </b>This means the user must fill in this field; otherwise, the form will not be submitted.</li>
+            </ul>
+
+            <h3>Email Input</h3>
+            <div class="codeBox">
+                <pre><code>&lt;input type="email" id="email" name="email" required&gt;</code></pre>
+            </div>
+
+            <ul>
+                <li><b>type="email" - </b>This attribute ensures that the user enters a valid email address in this input field.</li>
+            </ul>
+
+            <h3>Gender (Radio Button)</h3>
+            <div class="codeBox">
+                <pre><code>&lt;input type="radio" name="gender" value="male"&gt; Male
+    &lt;input type="radio" name="gender" value="female"&gt; Female
+</code></pre>
+            </div>
+
+           <ul>
+                <li>Only one option can be selected at a time.</li>
+                <li>The same <b>name</b> attribute groups the radio buttons together.</li>
+            </ul>
+
+            <h3>Preference Section</h3>
+            <div class="codeBox">
+                <pre><code>&lt;fieldset&gt;
+    &lt;legend&gt;Preferences&lt;/legend&gt;
+</code></pre>
+            </div>
+
+            <h3>Skills</h3>
+            <div class="codeBox">
+                <pre><code>&lt;input type="checkbox" name="skill[]" value="html"&gt;</code></pre>
+            </div>
+
+            <ul>
+                <li>The user can select multiple options.</li>
+                <li>Checkboxes allow multiple values to be selected and send the data as an array using the same <b>name</b> attribute.</li>
+            </ul>
+
+            <h3>Message Section</h3>
+            <div class="codeBox">
+                <pre><code>&lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;</code></pre>
+            </div>
+
+            <ul>
+                <li><b>&lt;textarea&gt; - </b>This tag is used for multi-line input.</li>
+                <li>The <b>rows</b> and <b>cols</b> attributes control the size.</li>
+            </ul>
+
+            <h3>Submit Button</h3>
+            <div class="codeBox">
+                <pre><code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code></pre>
+            </div>
+            
+            <ul>
+                <li>The <b>&lt;button&gt;</b> tag is used to submit the form.</li>
+                <li>When clicked, it submits the form data to the server or triggers a JavaScript function for processing.</li>
+            </ul>
+            
+            <h3>Try it Yourself Button</h3>
+            <div class="codeBox">
+                <pre><code>&lt;button class="tryBtn"&gt;Try it Yourself&lt;/button&gt;</code></pre>
+            </div>
+            
+            <ul>
+                <li>This button is used to allow users to test or run the code interactively.</li>
+            </ul>
+
+            <ul>
+                <li>This button is placed outside the form.</li>
+                <li>It is usually used to:
+                    <ul>
+                        <li>Open the editor</li>
+                        <li>Run the code</li>
+                        <li>Display the output</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>This example demonstrates how to create a complete HTML form using various input types such as text fields, radio buttons, checkboxes, and textarea. Understanding these elements is essential for collecting user data effectively and building interactive web applications.</p>
+
+            <div id="lessonBtns"></div>
+        </main>
+
+    </div>
+
+    <div id="footer"></div>
+    <script src="btn.js"></script>
+    <script src="navBar.js"></script>
+    <script src="tutorial.js"></script>
+
+<script>
+function openEditor(codeId) {
+    const code = document.getElementById(codeId).innerText;
+
+    // Save code
+    localStorage.setItem("code", code);
+
+    // Open editor
+    window.open("editor.html", "_blank");
+}
+</script>
+
+</body>
+</html>
