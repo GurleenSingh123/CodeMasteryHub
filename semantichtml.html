@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Learn HTML layout and structure using semantic elements like header, main, and footer. A beginner-friendly guide with examples and best practices.">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1745671140751630"
+     crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6PF7WWWQMK');
+    </script>
+
+
+    <title>Introduction To Page Layout and Structure in HTML | CodeEasy Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar"></div>
+
+    <div class="layout">
+        <div id="sideBar" class="sidebar"></div>
+
+        <main class="content">
+           <h1>HTML Layout and Structure</h1>
+            <p>In modern HTML, semantic elements like &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; are used to define the structure and layout of a webpage.</p>
+
+            <h2>&lt;header&gt; - The Introductory Section</h2>
+            <p>The &lt;header&gt; element represents the introductory content for a webpage or a section.</p>
+
+            <p>It is typically placed at the top, but it can also appear inside other elements like &lt;article&gt; or &lt;section&gt;.</p>
+
+            <h3>Purpose:</h3>
+            <ul>
+                <li>Display branding (logo, name)</li>
+                <li>Provide navigation</li>
+                <li>Introduce the content</li>
+            </ul>
+
+            <p><b>Example:</b></p>
+
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;header&gt;
+    &lt;h1&gt;Main Heading&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;a href="#"&gt;Home&lt;/a&gt;
+        &lt;a href="#"&gt;About&lt;/a&gt;
+        &lt;a href="#"&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try It Yourself</button>
+
+            <h3>Important Rules:</h3>
+            <ul>
+                <li>You can use multiple &lt;header&gt; elements.
+                    <ul>
+                        <li>One for the page</li>
+                        <li>Others inside &lt;article&gt; or &lt;section&gt;</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>&lt;main&gt; - The Core Content Area</h2>
+            <p>The &lt;main&gt; element represents the main content of the webpage. It defines the primary purpose of the page.</p>
+
+            <h3>Purpose</h3>
+            <ul>
+                <li>Contains the most important content.</li>
+                <li>Excludes repeated elements like &lt;header&gt;, &lt;footer&gt;, and &lt;aside&gt;.</li>
+            </ul>
+
+            <p><b>Example:</b></p>
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;main&gt;
+                &lt;h2&gt;Learn HTML&lt;/h2&gt;
+                &lt;p&gt;This is the main content of the page.&lt;/p&gt;
+            &lt;/main&gt;
+            </code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try It Yourself</button>
+            
+            <h3>Important Rules:</h3>
+            <ul>
+                <li>Only one &lt;main&gt; element should be used per page.</li>
+                <li>It should not include:
+                    <ul>
+                        <li>Navigation</li>
+                        <li>Sidebar content</li>
+                        <li>Footer content</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h2>&lt;footer&gt; - The Closing Section</h2>
+            <p>The &lt;footer&gt; element represents the bottom section of a webpage and contains supporting information.</p>
+
+            <h3>Purpose</h3>
+            <ul>
+                <li>Provides additional information.</li>
+                <li>Closes the page or section.</li>
+            </ul>
+
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;footer&gt;
+    &lt;p&gt;&copy; 2026 Footer Section&lt;/p&gt;
+    &lt;a href="#"&gt;Privacy Policy&lt;/a&gt;
+&lt;/footer&gt;
+</code></pre>
+                </div>
+            </div>
+            
+            <button class="tryBtn">Try It Yourself</button>
+
+            <h3>Important Rules:</h3>
+            <ul>
+                <li>You can use multiple &lt;footer&gt; elements, not just one.</li>
+            </ul>
+
+            <h2>Why Semantic Elements Are Important</h2>
+            <ul>
+                <li>Improve SEO (Search Engine Optimization)</li>
+                <li>Make code easier to read</li>
+                <li>Improve accessibility</li>
+                <li>Help search engines understand content</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>&lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; are essential semantic elements in HTML5 that define the structure and organization of a webpage.</p>
+
+            <p>They divide a webpage into clear sections—where &lt;header&gt; introduces the content, &lt;main&gt; contains the primary and most important information, and &lt;footer&gt; provides supporting or concluding details.</p>
+
+            <div id="lessonBtns"></div>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+    <script src="btn.js"></script>
+    <script src="navBar.js"></script>
+    <script src="tutorial.js"></script>
+</body>
+</html>

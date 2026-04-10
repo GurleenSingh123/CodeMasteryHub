@@ -26,7 +26,8 @@ function setupNavigation(){
     "formstructure.html", 
     "inputcontrol.html", 
     "formusability.html", 
-    "formexample.html"
+    "formexample.html", 
+    "semantichtml.html"
   ];
 
   let current = window.location.pathname.split("/").pop();

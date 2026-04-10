@@ -43,15 +43,15 @@
   </url>
 
   <url>
-    <loc>https://www.codeeasyhub.com/About.html</loc>
+    <loc>https://www.codeeasyhub.com/about.html</loc>
   </url>
 
   <url>
-    <loc>https://www.codeeasyhub.com/Contact.html</loc>
+    <loc>https://www.codeeasyhub.com/contact.html</loc>
   </url>
 
   <url>
-    <loc>https://www.codeeasyhub.com/privacyPolicy.html</loc>
+    <loc>https://www.codeeasyhub.com/privacypolicy.html</loc>
   </url>
 
   <url>
@@ -92,6 +92,10 @@
 
   <url>
     <loc>https://www.codeeasyhub.com/formexample.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.codeeasyhub.com/semantichtml.html</loc>
   </url>
 
 </urlset>
