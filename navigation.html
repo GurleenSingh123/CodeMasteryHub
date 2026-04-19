@@ -1,11 +1,14 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML navigation with examples. Understand nav element, types of navigation, and best practices for beginners.">
+
+    <meta name="p:domain_verify" content="48d4167586b053816eec9948f0210290"/>
 
     <!-- Google tag (gtag.js) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PF7WWWQMK"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -26,11 +29,254 @@
 
         <main class="content">
             <h1>Navigation and Content Meaning in HTML</h1>
-            <p>Navigation is the most important part of the website. It defines how user move from one page to another, discover content, interact with the site.</p>
 
-            <p>If navigation on the site is confusing, user may leave the site.</p>
-            <p>if navigation on the site is easy, user may stay long time on the site.</p>
+            <p>Navigation is one of the most important parts of a website. It defines how users move from one page to another, discover content, and interact with the site.</p>
 
+            <p>If the navigation on a site is confusing, users may leave the site.</p>
+
+            <p>If the navigation on a site is simple and easy to use, users are more likely to stay longer.</p>
+
+            <h2>&lt;nav&gt; - Navigation Element</h2>
+
+            <p>The &lt;nav&gt; tag is used to define navigation links on a webpage.</p>
+
+            <div class="ad-wrapper">
+
+            <div class="ad-container">
+                <!-- Mobile Ad (300x250) -->
+                <div class="ad-mobile">
+                    <script>
+                        atOptions = {
+                          'key' : '5046bdbb7430148c76b1b94cc7228485',
+                          'format' : 'iframe',
+                          'height' : 250,
+                          'width' : 300,
+                          'params' : {}
+                        };
+                    </script>
+                    <script src="https://www.highperformanceformat.com/5046bdbb7430148c76b1b94cc7228485/invoke.js"></script>
+                </div>
+            
+                <!-- Desktop Ad (728x90) -->
+                <div class="ad-desktop">
+                    <script>
+                        atOptions = {
+                          'key' : '7e50b6e48a1f443835e0a43c6da04b8d',
+                          'format' : 'iframe',
+                          'height' : 90,
+                          'width' : 728,
+                          'params' : {}
+                        };
+                    </script>
+                    <script src="https://www.highperformanceformat.com/7e50b6e48a1f443835e0a43c6da04b8d/invoke.js"></script>
+                </div>
+        
+            </div>
+            </div>
+
+            <p><b>For Example: </b></p>
+            <div class="exampleContent">
+                <div class="codeBox">
+        <pre><code>&lt;nav&gt;
+    &lt;a href="index.html"&gt;Home&lt;/a&gt;
+    &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+    &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try it YourSelf</button>
+
+            <h3>Why do we use it?</h3>
+            <ul>
+                <li>It tells browsers and search engines:
+                    <ul>
+                        <li>This part contains important links for navigation.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Types of Navigation in HTML</h2>
+            <p>Navigation is not limited to just one menu. Websites use different types of navigation systems depending on their purpose.</p>
+
+            <h3>Main Navigation (Primary Navigation)</h3>
+            <p>The main menu of a website, usually located at the top (header).</p>
+
+            <h4>Features:</h4>
+            <ul>
+                <li>Visible on all pages.</li>
+                <li>Contains the most important links.</li>
+                <li>Helps users explore the main sections of the website.</li>
+            </ul>
+
+            <p><b>For Example:</b></p>
+
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;header&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="introduction.html"&gt;Tutorial&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;    
+        &lt;/ul&gt;
+    &lt;/nav&gt; 
+&lt;/header&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try it Yourself</button>
+
+            <h3>Secondary Navigation</h3>
+            <p>Secondary navigation is used for less important or more detailed links.</p>
+                    
+            <h4>Features:</h4>
+            <ul>
+                <li>Often placed in a sidebar.</li>
+                <li>Can be displayed vertically.</li>
+                <li>Supports the main navigation.</li>
+            </ul>
+
+            <p><b>For Example: </b></p>
+
+           <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;aside&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="introduction.html"&gt;Tutorial&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;    
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/aside&gt;
+</code></pre>
+                </div>
+            </div>
+            
+            <button class="tryBtn">Try it Yourself</button>
+
+            <h3>Footer Navigation</h3>
+            <p>Footer navigation is placed at the bottom of the page.</p>
+
+            <h4>Features:</h4>
+            <ul>
+                <li>Appears on all pages.</li>
+                <li>Contains additional or important legal links.</li>
+            </ul>
+
+            <p><b>For Example: </b></p>
+            <div class="exampleContent">
+                <div class="codeBox">
+                    <pre><code>&lt;footer&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="privacypolicy.html"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="terms.html"&gt;Terms and Conditions&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/footer&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try it Yourself</button>
+
+            <h3>Pagination Navigation</h3>
+            <p>Pagination navigation is used when content is divided into multiple pages.</p>
+                    
+            <h4>Features:</h4>
+            <ul>
+                <li>Shows page numbers.</li>
+                <li>Includes next and previous buttons.</li>
+                <li>Commonly used in blogs and search results.</li>
+            </ul>
+
+            <p><b>For Example:</b></p>
+            <div class="exampleContent">
+                <div class="codeBox">
+                <pre><code>&lt;nav&gt;
+    &lt;a href="#"&gt;Previous&lt;/a&gt;
+    &lt;a href="#"&gt;1&lt;/a&gt;
+    &lt;a href="#"&gt;2&lt;/a&gt;
+    &lt;a href="#"&gt;Next&lt;/a&gt;
+&lt;/nav&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try it Yourself</button>
+
+            <h3>Hamburger Navigation</h3>
+            <p>A mobile-friendly menu hidden behind a ☰ icon.</p>
+
+            <h4>Features:</h4>
+            <ul>
+                <li>Expands when clicked.</li>
+                <li>Commonly used on mobile devices.</li>
+                <li>Saves screen space.</li>
+            </ul>
+
+            <div class="ad-wrapper">
+            
+
+            <div class="ad-container">
+                <!-- Mobile Ad (300x250) -->
+                <div class="ad-mobile">
+                    <script>
+                        atOptions = {
+                          'key' : '5046bdbb7430148c76b1b94cc7228485',
+                          'format' : 'iframe',
+                          'height' : 250,
+                          'width' : 300,
+                          'params' : {}
+                        };
+                    </script>
+                    <script src="https://www.highperformanceformat.com/5046bdbb7430148c76b1b94cc7228485/invoke.js"></script>
+                </div>
+            
+                <!-- Desktop Ad (728x90) -->
+                <div class="ad-desktop">
+                    <script>
+                        atOptions = {
+                          'key' : '7e50b6e48a1f443835e0a43c6da04b8d',
+                          'format' : 'iframe',
+                          'height' : 90,
+                          'width' : 728,
+                          'params' : {}
+                        };
+                    </script>
+                    <script src="https://www.highperformanceformat.com/7e50b6e48a1f443835e0a43c6da04b8d/invoke.js"></script>
+                </div>
+        
+            </div>
+            </div>
+
+            <p><b>For Example:</b></p>
+            <div class="exampleContent">
+                <div class="codeBox">
+        <pre><code>&lt;button&gt;☰&lt;/button&gt;
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="introduction.html"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+                </div>
+            </div>
+
+            <button class="tryBtn">Try it Yourself</button>
+
+            <h2>Conclusion</h2>
+            <p>Navigation plays a crucial role in building a user-friendly website. It helps users easily move between pages, find information, and interact with content.</p>
+
+            <p>Different types of navigation, such as main navigation, secondary navigation, footer navigation, pagination, and hamburger menus, are used based on the structure and purpose of the website.</p>
 
             <div id="lessonBtns"></div>
         </main>
@@ -41,5 +287,7 @@
     <script src="navBar.js"></script>
     <script src="tutorial.js"></script>
     
+    <script src="https://pl29158690.profitablecpmratenetwork.com/ed/eb/5b/edeb5bf1574b6315333045a1b56cc9a9.js"></script>
+
 </body>
-</html> -->
+</html>
