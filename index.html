@@ -25,8 +25,10 @@
 
     <div id="navBar"></div>
 
-    <script src="https://pl29158690.profitablecpmratenetwork.com/ed/eb/5b/edeb5bf1574b6315333045a1b56cc9a9.js"></script>
-
+    <div class="ads-box">
+        <script src="https://pl29158690.profitablecpmratenetwork.com/ed/eb/5b/edeb5bf1574b6315333045a1b56cc9a9.js"></script>
+    </div>
+        
     <div class="homePage">
 
         <div class="homeSec">
@@ -41,6 +43,8 @@
             <a class="learnAboutBtn" href="about.html">Learn More</a>
         </div>
     
+        <div class="ads-box">
+
         <div class="ad-wrapper">
             
             <div class="ad-container">
@@ -74,6 +78,7 @@
         
             </div>
             </div>
+            </div>
 
         <div class="tutorialDetail">
             
@@ -102,6 +107,24 @@
     <div id="footer"></div>
     <script src="footer.js"></script>
     <script src="navBar.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const hostname = window.location.hostname;
+        
+          const isAllowed =
+            hostname === "codeeasyhub.com" ||
+            hostname === "www.codeeasyhub.com" ||
+            hostname.endsWith(".codeeasyhub.com");
+        
+          if (!isAllowed) {
+            const ads = document.querySelectorAll(".ads-box")
+            ads.forEach(ad => {
+              ad.style.display = "none";
+            });
+          }
+        });
+    </script>
 
 </body>
 </html>
