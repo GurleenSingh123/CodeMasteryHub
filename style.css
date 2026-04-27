@@ -854,35 +854,7 @@ table th, table td{
     }
 }
 
-.ad-mobile{
-    display: none;
-}
-
-.ad-desktop{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 @media (max-width: 768px){
-
-    .ad-wrapper {
-        padding: 20px 0;          /* space top & bottom */
-    }
-
-    .ad-container {
-        width: 100%;
-        /* overflow: hidden; */
-        display: flex;
-        justify-content: center;  /* center the ad */
-    }
-
-    .ad-mobile {
-        display: none;
-    }
-
-    .ad-desktop {
-        display: block;
-    }
 
     .menuBtn{
         font-size:26px;
@@ -1361,16 +1333,6 @@ table th, table td{
 } 
 
 @media(max-width: 480px){
-
-    .ad-mobile {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        display: block;
-    }
-
-    .ad-desktop {
-        display: none;
-    }
 
     .menuBtn{
         font-size: 24px;
