@@ -818,11 +818,11 @@ table th, table td{
     color: rgb(17, 217, 17);
 }
 
-.ad-slot {
+/* .ad-slot {
   display: flex;
   justify-content: center;
   margin: 20px 0;
-}
+} */
 
 /* .ad-desktop{
     display: block;
