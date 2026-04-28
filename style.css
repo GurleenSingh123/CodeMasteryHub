@@ -818,6 +818,12 @@ table th, table td{
     color: rgb(17, 217, 17);
 }
 
+.ad-slot {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
 /* .ad-desktop{
     display: block;
 }
@@ -889,9 +895,9 @@ table th, table td{
     .ad-desktop{
         display: block;
         margin-top: 20px;
-    }
+    } */
 
-    .ad-wrapper {
+    /* .ad-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;

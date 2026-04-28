@@ -9,38 +9,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (isLocal) return;
 
-  // ✅ Load popunder/social ad (only once)
-  const popScript = document.createElement("script");
-  popScript.src = "https://pl29158690.profitablecpmratenetwork.com/ed/eb/5b/edeb5bf1574b6315333045a1b56cc9a9.js";
-  document.body.appendChild(popScript);
-
-  // ✅ Detect screen width
   const screenWidth = window.innerWidth;
 
   document.querySelectorAll(".ad-slot").forEach((slot) => {
 
     let key, width, height;
 
-    // 📱 Mobile (0–480px)
-    if (screenWidth <= 480) {
-      key = slot.dataset.mobile;
+    // 📱 Mobile (0–767px)
+    if (screenWidth < 768) {
+      key = "5046bdbb7430148c76b1b94cc7228485"; // mobile key
       width = 300;
       height = 250;
 
-    // 💻 Desktop (768px+)
-    } else if (screenWidth >= 768) {
-      key = slot.dataset.desktop;
+    // 💻 Desktop (768px and above)
+    } else {
+      key = "7e50b6e48a1f443835e0a43c6da04b8d"; // desktop key
       width = 728;
       height = 90;
-
-    // 📱 Tablet (481–767px) → treat as mobile (recommended)
-    } else {
-      key = slot.dataset.mobile;
-      width = 300;
-      height = 250;
     }
 
-    // ✅ Create config script
+    // Create config script
     const config = document.createElement("script");
     config.innerHTML = `
       atOptions = {
@@ -52,11 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
       };
     `;
 
-    // ✅ Create invoke script
+    // Create invoke script
     const invoke = document.createElement("script");
     invoke.src = `https://www.highperformanceformat.com/${key}/invoke.js`;
 
-    // ✅ Append to slot
+    // Append to slot
     slot.appendChild(config);
     slot.appendChild(invoke);
 
