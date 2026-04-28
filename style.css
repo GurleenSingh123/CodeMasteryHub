@@ -818,27 +818,23 @@ table th, table td{
     color: rgb(17, 217, 17);
 }
 
-.ad-slot {
-  margin-top: 20px;
-}
-
-/* .ad-desktop{
+.ad-desktop{
     display: block;
 }
 
 .ad-mobile{
     display: none;
-} */
+}
 
 @media(max-width: 1000px){
 
-    /* .ad-mobile{
+    .ad-mobile{
         display: none;
     }
 
     .ad-desktop{
         display: block;
-    } */
+    }
 
     .homeSec{
         max-width: 600px;
@@ -859,13 +855,13 @@ table th, table td{
 
 @media(max-width: 820px){
 
-    /* .ad-mobile{
+    .ad-mobile{
         display: none;
     }
 
     .ad-desktop{
         display: block;
-    } */
+    }
 
     .homeSec{
         max-width: 500px;
@@ -886,25 +882,20 @@ table th, table td{
 
 @media (max-width: 768px){
 
-    .ad-slot{
-        display: flex;
-        justify-content: center;
-    }
-
-    /* .ad-mobile{
+    .ad-mobile{
         display: none;
     }
 
     .ad-desktop{
         display: block;
         margin-top: 20px;
-    } */
+    }
 
-    /* .ad-wrapper {
+    .ad-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-    }    */
+    }   
 
     .menuBtn{
         font-size:26px;
@@ -1384,14 +1375,14 @@ table th, table td{
 
 @media(max-width: 480px){
 
-    /* .ad-mobile{
+    .ad-mobile{
         display: block;
         margin-top: 20px;
     }
 
     .ad-desktop{
         display: none;
-    } */
+    }
 
     .menuBtn{
         font-size: 24px;
