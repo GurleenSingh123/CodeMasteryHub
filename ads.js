@@ -1,5 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+let currentMode = null;
 
+function loadAds() {
   const isLocal =
     location.hostname === "localhost" ||
     location.hostname === "127.0.0.1" ||
@@ -11,24 +12,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const screenWidth = window.innerWidth;
 
+  // Decide mode
+  let newMode = screenWidth < 768 ? "mobile" : "desktop";
+
+  // ❌ If same mode → do nothing
+  if (newMode === currentMode) return;
+
+  currentMode = newMode;
+
   document.querySelectorAll(".ad-slot").forEach((slot) => {
+    slot.innerHTML = ""; // clear old ad
 
     let key, width, height;
 
-    // 📱 Mobile (0–767px)
-    if (screenWidth < 768) {
-      key = "5046bdbb7430148c76b1b94cc7228485"; // mobile key
+    if (newMode === "mobile") {
+      key = "5046bdbb7430148c76b1b94cc7228485";
       width = 300;
       height = 250;
-
-    // 💻 Desktop (768px and above)
     } else {
-      key = "7e50b6e48a1f443835e0a43c6da04b8d"; // desktop key
+      key = "7e50b6e48a1f443835e0a43c6da04b8d";
       width = 728;
       height = 90;
     }
 
-    // Create config script
     const config = document.createElement("script");
     config.innerHTML = `
       atOptions = {
@@ -40,14 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
       };
     `;
 
-    // Create invoke script
     const invoke = document.createElement("script");
     invoke.src = `https://www.highperformanceformat.com/${key}/invoke.js`;
 
-    // Append to slot
     slot.appendChild(config);
     slot.appendChild(invoke);
-
   });
+}
 
-});
+// Run on load
+document.addEventListener("DOMContentLoaded", loadAds);
+
+// Run on resize (optimized)
+window.addEventListener("resize", loadAds);
