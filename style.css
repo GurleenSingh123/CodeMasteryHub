@@ -818,6 +818,11 @@ table th, table td{
     color: rgb(17, 217, 17);
 }
 
+.ad-slot {
+  border: 2px solid red;
+  min-height: 250px;
+}
+
 /* .ad-slot {
   display: flex;
   justify-content: center;
