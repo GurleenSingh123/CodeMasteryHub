@@ -1,6 +1,8 @@
 let currentMode = null;
+let adsInitialized = false;
 
 function loadAds() {
+
   const isLocal =
     location.hostname === "localhost" ||
     location.hostname === "127.0.0.1" ||
@@ -11,17 +13,24 @@ function loadAds() {
   if (isLocal) return;
 
   const screenWidth = window.innerWidth;
+  const newMode = screenWidth < 768 ? "mobile" : "desktop";
 
-  // Decide mode
-  let newMode = screenWidth < 768 ? "mobile" : "desktop";
-
-  // ❌ If same mode → do nothing
-  if (newMode === currentMode) return;
+  // ❌ Prevent unnecessary reload
+  if (newMode === currentMode && adsInitialized) return;
 
   currentMode = newMode;
 
-  document.querySelectorAll(".ad-slot").forEach((slot) => {
-    slot.innerHTML = ""; // clear old ad
+  const slots = document.querySelectorAll(".ad-slot");
+
+  // 🔍 Debug (you can remove later)
+  console.log("Ad slots found:", slots.length);
+
+  slots.forEach((slot, index) => {
+
+    // ❌ Prevent reloading same slot again
+    if (slot.dataset.loaded === "true" && newMode === currentMode) return;
+
+    slot.innerHTML = ""; // clear only when needed
 
     let key, width, height;
 
@@ -51,11 +60,21 @@ function loadAds() {
 
     slot.appendChild(config);
     slot.appendChild(invoke);
+
+    // ✅ Mark slot as loaded
+    slot.dataset.loaded = "true";
   });
+
+  adsInitialized = true;
 }
 
-// Run on load
+// Run after DOM is ready
 document.addEventListener("DOMContentLoaded", loadAds);
 
-// Run on resize (optimized)
-window.addEventListener("resize", loadAds);
+// ✅ Optimized resize (debounce)
+let resizeTimeout;
+
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(loadAds, 300);
+});

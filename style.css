@@ -819,15 +819,8 @@ table th, table td{
 }
 
 .ad-slot {
-  border: 2px solid red;
-  min-height: 250px;
+  margin-top: 20px;
 }
-
-/* .ad-slot {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-} */
 
 /* .ad-desktop{
     display: block;
@@ -892,6 +885,11 @@ table th, table td{
 }
 
 @media (max-width: 768px){
+
+    .ad-slot{
+        display: flex;
+        justify-content: center;
+    }
 
     /* .ad-mobile{
         display: none;
