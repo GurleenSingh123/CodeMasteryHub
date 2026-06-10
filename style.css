@@ -74,9 +74,6 @@ body{
 }
 
 .homePage{
-    /* max-width: 1000px;
-    margin: auto;
-    margin-top: 50px; */
     padding: 40px 80px;
     max-width: 1000px;
     margin: auto;
@@ -1707,7 +1704,7 @@ table th, table td{
         max-width: 100%;
         margin-bottom: 20px;
 
-        overflow-x: auto;        /* scroll works */
+        overflow-x: auto;
         border-radius: 12px;
     }       
     .codeBox::-webkit-scrollbar {
